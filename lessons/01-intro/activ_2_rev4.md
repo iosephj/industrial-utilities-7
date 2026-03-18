@@ -1,43 +1,33 @@
 ---
-title: "Actividad sobre fenómenos industriales"
+title: "Actividad sobre Industria 4.0"
 autor: "José Juarez"
-version: "11/03/25"
+version: "18/03/26"
 ---
 
 <span hidden>Local path of the file: "H:/"</span>
 <span hidden>Local path of images: "H:/"</span>
 
+<!-- Image -->
 
 <!-- *** GUIDE START *** -->
 
-Hay varios fenómenos industriales destacados que se podrían ver pero vamos a poner atención sobre China y Alemania. Entre otras cosas de China se puede destacar un plan muy centralizado de desarrollo industrial y de Alemania la gran capacidad de trabajo y desarrollo. 
+**Tarea con puntaje:**
 
+Lo que se considera la última revolución industrial, que es la cuarta, se la denomina también "Industria 4.0". En el siguiente [video](https://www.youtube.com/watch?v=a0Ycxn-bZak) puedes ver como la autora nombra las distintas revoluciones industriales y luego expone las características de esta última. También hace algunas reflexiones sobre el impacto de estas revoluciones en la vida humana.
 
-## El fenómeno industrial Chino y Alemán
+Esta tarea se escribe y se entrega en la misma clase. Se cuenta con 15 minutos para hacerla. Si hay más de 5 errores de tilde se descuenta puntaje. Si se entrea fuera de termino también se descuenta. 
 
-En las últimas décadas China ha sido, y quizás aun lo sea, la "fábrica del mundo". Observa el siguiente [video](https://www.youtube.com/watch?v=x02hP3I288c) en el que se expresa una opinión sobre las causas de este fenómeno. 
+a) Hacer una tabla resumen como se muestra abajo y rellenarla mientras miras el video.
 
-También Alemania siempre se ha destacado como potencia industrial. Luego de destrucción causada por la segunda se recuperó rápidamente y hoy ocupa un lugar importante dentro de Europa. En el 2020 conversando con el Ing. Fabián Prieto, que estuvo a cargo del INET y que viajó por Alemania por razón de su cargo, me contestó algunas preguntas sobre este país. Abajo hay unas notas sueltas sobre sus respuestas:
+| Revolución N° | Año (aprox) | Características |
+|---------------|-------------|-----------------|
+| 1°            | s. XVIII    | Vapor           |
+| 2°            |             |                 |
+| 3°            |             |                 |
+| 4°            |             |                 |
 
-   - *Reconocen que tienen dificultades para sacar más rendimiento a su industria automotriz...*
+b) Escribir un resumen de a lo sumo "tres" o "cuatro" renglones de la opinión de la autora sobre "el impacto de las revoluciones en la vida humana". Se trata de algo muy breve y por eso tienes que pensar bien las palabras. Además tiene que estar con letra legible y sin errores de ortografía.
 
-   - *Dicen que fabrican las máquinas con la que los Chinos fabrican las cosas... pero que su negocio está en el servicio postventa de esas máquinas*
-
-   - *Usan un sistema educativo dual en donde hay un fuerte contacto entre la educación y las empresas*
-
-**Actividad de cuchicheo:**
-
-
-**Actividad**
-
-Esta actividad lleva puntaje
-
-Buscar información sobre si China sigue siendo la fábrica del mundo y preparar una breve exposición oral sobre lo que encontraste. Esta exposición debe durar entre 1 y 2 minutos. Puedes escribir un borrador pero no es obligatorio. Cuando estés listo te anotas para conversar y exponerlo con el profesor.
-
-
-
-
-<br><br>
 
 
 
