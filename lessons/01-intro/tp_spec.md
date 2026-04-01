@@ -8,17 +8,18 @@ version: "1/4/26"
 
 <!-- *** GUIDE START *** -->
 
-**El requisito para poder hacer este trabajo es sumar como mínimo 3.6 puntos en las actividades.**
+**El requisito para poder hacer este trabajo es sumar como mínimo 3.65 puntos en las actividades.**
 
 <br>
 
 Pueden elegirse cualquiera de los temas de abajo:
 
+
 ## Tema 1
 
 Elegir un capítulo del libro "Economía para el 99 % de la población" y:
 
-- Presentar un resumen esquemático del mismo escrito a mano
+- Presentar un resumen esquemático escrito a mano
 
 - Expnerlo oralmente al profesor en no más de 3 minutos y contestando dudas o preguntas que surjan
 
