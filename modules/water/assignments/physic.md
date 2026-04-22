@@ -9,37 +9,57 @@ version: "01/04/26"
 
 Resuelve estas cuestiones o problemas en la carpeta de modo prolijo
 
-- 1- ¿De qué fenómeno físico se valían los romanos en sus acueductos para salvar valles profundos y extensos en donde hacer "arcadas" no era viable? En la introducción hay un link a un video que explica esto y otras cosas.
+- **1.** ¿De qué fenómeno físico se valían los romanos en sus acueductos para salvar valles profundos y extensos en donde hacer "arcadas" no era viable? En la introducción hay un link a un video que explica esto y otras cosas.
 
-- 2- Haz una tabla con las equivalencias entre las siguientes unidades de presión: Kgf/cm2, Bar, PSI (Libras por pulgada cuadrada), m.c.a (metros de columna de agua). Hazlo en el formato que te parezca mejor.
+- **2.** Haz una tabla con las equivalencias entre las siguientes unidades de presión: Kgf/cm2, Bar, PSI (Libras por pulgada cuadrada), m.c.a (metros de columna de agua). Hazlo en el formato que te parezca mejor.
 
-- 3- Calcular la presión hidrostática en el punto D si fuera posible. Expresarla en [Kgf/cm2]. Pon atención en tomar la distancia o altura correcta. 
+- **3.** Calcular la presión hidrostática en el punto D si fuera posible. Expresarla en [Kgf/cm2]. Pon atención en tomar la distancia o altura correcta. 
 
-<center>![](D:/im/insti/i_agua/_i/phys_calc_presion1a.png)</center>
+<!-- Image -->
+<br>
+   <center>![](phys_calc_presion1a.png)</center>
+<br>
 
-- 4- La presión en los líquidos se mide con un instrumento llamado manómetro. Suponiendo la figura de abajo en donde ambos tanques tienen un manómetro en la cañería horizontal. ¿Esos manómetros marcan la misma o distinta presiones y cuál es esa o esas presiones? Expresarla en Kgf/cm2. Tener en cuenta que la altura o distancia se toma desde el nivel superior hasta el punto en cuestión.
+
+- **4.** La presión en los líquidos se mide con un instrumento llamado manómetro. Suponiendo la figura de abajo en donde ambos tanques tienen un manómetro en la cañería horizontal. ¿Esos manómetros marcan la misma o distinta presiones y cuál es esa o esas presiones? Expresarla en Kgf/cm2. Tener en cuenta que la altura o distancia se toma desde el nivel superior hasta el punto en cuestión.
  
-<center>![](D:/im/insti/i_agua/_i/phys_calc_presion5a.png){ width=300px }</center>
+<!-- Image -->
+<br>
+   <center>![](phys_calc_presion5a.png){width=300px}</center>
+   <center>
+      <span class="grey3 size50">Fuente: Manual (Nisnovich) </span>
+   </center>
+<br>
+
  
-- 5- ¿Qué presión hidrostática hay en la ducha antes de abrir la canilla? Expresarla en kgf/cm2 y en m.c.a (metros de columna de agua). Equivalencia: `1 Kgf/cm2 = 10 m.c.a.` ¿Cómo es la presión de la ducha respecto a la recién calculada cuando se abre la canilla?
+- **5.** ¿Qué presión hidrostática hay en la ducha antes de abrir la canilla? Expresarla en kgf/cm2 y en m.c.a (metros de columna de agua). Equivalencia: `1 Kgf/cm2 = 10 m.c.a.` ¿Cómo es la presión de la ducha respecto a la recién calculada cuando se abre la canilla?
 
-<center>![](D:/im/insti/i_agua/_i/phys_calc_presion7.png){ width=300px }</center>
+<!-- Image -->
+<br>
+   <center>![](phys_calc_presion7.png){width=300px}</center>
+<br>
 
 
-- 6- Responder lo siguiente referido a la figura:
+- **6.** Responder lo siguiente referido a la figura:
  
    + a- Explicar como son las presiones hidrostáticas en ambas canillas (iguales/ distintas) y el porqué
    + b- Si se abren ambas canillas. Explicar como son las presiones dinámicas en ambas canillas y el porqué
    + c- Suponga que entre el nivel del agua del tanque y las canillas hay 20 metros de altura. ¿Cuál es la presión hidrostática en cada canilla? Calcularla en Kgf/cm2, m.c.a. y PSI.
 
-<center>![](D:/im/insti/i_agua/_i/phys_perdida_carga.png){ width=300px }</center>
+<!-- Image -->
+<br>
+   <center>![](phys_perdida_carga.png){width=300px}</center>
+   <center>
+      <span class="grey3 size50">Fuente: Manual (Nisnovich) </span>
+   </center>
+<br>
 
-- 7- Un problema de la vida real de difícil solución que también puede suceder en tu casa. La llamada **humedad de cimientos** sucede comunmente en contrucciones antiguas en donde los cimientos están en contacto con napas de agua subterránea o simplemente con la humedad de la tierra en donde se apoyan. Cuando sucede esto muchas veces aparecen manchas en la parte superior de la pared. 
-   + a- Explique por que sube la humedad hasta esos lugares superiores. 
-   + b- Investigue y explique en dos o tres renglones como se forma el salitre.
-   + c- A pesar de que se usan varias tecnologías para contrarestar la humedad de cimientos siempre se escuchan comentarios de que después de un tiempo la humedad vuelve a aparecer y a destruir la pintura donde se había reparado. Esto sucede sobre todo en contrucciones antiguas donde las paredes no se contruyeron orginalmente usando protecciones contra la humedad. Al parecer es un problema de difícil solución en estos casos. Sin embargo hay una tecnología llamada "electroósmosis" que parece ser una muy buena opción si se puede hacer el gasto. Explique brevemente en que consiste esta tecnológía. (4 o 5 renglones, explicar simplemente lo esencial). 
 
+- **7.** Un problema real, frecuente en viviendas antiguas, es la **humedad de cimientos**. Ocurre cuando los cimientos están en contacto con napas de agua subterránea o con la humedad del suelo. En estos casos, suelen aparecer manchas en la parte superior de las paredes.
 
+  * a) Explique por qué la humedad asciende hasta esas zonas superiores.
+  * b) Investigue y explique, en dos o tres renglones, cómo se forma el salitre.
+  * c) Aunque existen diversas tecnologías para contrarrestar la humedad de cimientos, es común que, con el tiempo, vuelva a aparecer y deteriore la pintura, especialmente en construcciones antiguas que no cuentan con barreras impermeables originales. Esto lo convierte en un problema de difícil solución. Sin embargo, existe una tecnología llamada "electroósmosis" que puede ser una alternativa eficaz, aunque costosa. Explique brevemente en qué consiste (4 o 5 renglones, centrado en lo esencial).
 
 
 
