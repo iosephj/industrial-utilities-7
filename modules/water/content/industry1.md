@@ -20,9 +20,9 @@ version: "29/04/26"
 
 ### 1. Punto de partida
 
-En el diseño de una instalación de agua no se comienza por los caños, sino por lo que consume agua. Se diseña desde el consumo.
+En el diseño de una instalación de agua no se comienza por los caños, sino por lo que consume agua. Se diseña desde el consumo de los equipos que se usan, por ejemplo un aspersor de riego puede consumir entre 6 y 15 litros por minuto. Es un dato que lo da el fabricante. Recordar que para el dimensionamiento el consumo se identifica con el caudal o gasto.
 
-**Idea clave:** Analizar primero el consumo
+**Idea clave:** Analizar primero el consumo.
 
 <br>
 
@@ -62,7 +62,6 @@ La presión en domiciliarias no siempre aparece explícito, pero hay **rangos t�
 * Calefón / termotanque: suelen requerir mínimo ~0,5–1 bar
 * Válvula de inodoro: mejor arriba de ~1 bar
 
-
 ---
 
 En la industria no hay un único valor “típico” de presión; depende del proceso. Pero para dar referencia rápida:
@@ -85,7 +84,11 @@ En la industria no hay un único valor “típico” de presión; depende del pr
 
 </div>
 
-**Domiciliaria:** se basa en consumos probables (ducha, cocina, etc.). Las instalaciones domiciliarias funcionan bien en un rango amplio de presiones, por ejemplo el rango para las duchas y griferías es de 1 a 3 bares aproximadamente. 
+**Domiciliaria:** 
+
+Se basa en consumos probables (ducha, cocina, etc.) ya que no es siempre igual. El dimensionamiento de los caños es más simple por que se usan tablas que vinculan la cantidad y tipo de artefactos directamente con el diámetro del caño. Los consumos probables son tenidas en cuenta para hacer la tabla pero luego no aparecen explícitamente en ella.
+
+Además las instalaciones domiciliarias funcionan bien en un rango amplio de presiones, por ejemplo el rango para las duchas y griferías es de 1 a 3 bares aproximadamente. 
 
 <!-- Image -->
 <br>
@@ -96,7 +99,15 @@ En la industria no hay un único valor “típico” de presión; depende del pr
    </center>
 <br>
 
-**Industrial:** se basa en un **proceso o equipo** (riego, lavado, enfriamiento, etc.).
+**Industrial:** 
+
+Aquí no se trata de estimar consumos probables sino que se recurre a datos del fabricante para saber que consumo específico tienen los equipos para que funcionen bien. Pueden ser instalaciones de riego, lavado, enfriamiento, etc.
+
+Además en industria las exigencias suelen ser mayores:
+
+* más caudal
+* más control de presión (hay rangos más restringidos de presión)
+* mayor complejidad
 
 <!-- Image -->
 <br>
@@ -106,12 +117,6 @@ En la industria no hay un único valor “típico” de presión; depende del pr
       <span class="grey3 size50">Fuente: iagua.es</span>
    </center>
 <br>
-
-En industria, las exigencias suelen ser mayores:
-
-* más caudal
-* más control de presión
-* mayor complejidad
 
 
 <br>

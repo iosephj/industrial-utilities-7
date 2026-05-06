@@ -30,6 +30,9 @@ Para el diseño se adopta una velocidad del agua de 1,2 m/s.
 2. Calcular el **diámetro interno de la cañería**.
 3. Seleccionar el **diámetro comercial más adecuado**.
 
+  - La cañería es rígida salvo el último tramo que es de manguera flexible de goma reforzada o PVC con malla. Se selecciona comercialmente el tramo rígido. 
+  - El material de la cañería es PVC-U (La “U” significa “Unplasticized” = no plastificado). Es duro y resistente a presión. Lo suelen vender como “PVC hidráulico”.
+
 **Para aprobar esta actividad:** hay que mostrarla al profesor y responder cualquier pregunta sobre la resolución.  
 
 
