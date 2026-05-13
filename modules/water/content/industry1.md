@@ -136,11 +136,35 @@ Además en industria las exigencias suelen ser mayores:
 Toda instalación sigue esta lógica:
 
 1. Definir **qué consume agua**
-2. Determinar el **caudal necesario**
-3. Determinar la **presión requerida**
-4. Diseñar la **red de cañerías**
-5. Considerar **pérdidas de carga**
-6. Seleccionar la **bomba**
+
+2. Determinar el **caudal necesaria:**
+
+   - Sumar consumos simulatáneos
+   - Considerar picos y factor de simulataneidad.
+3. Determinar la **presión necesaria:**
+
+   - En el punto más desfavorable
+   - Incluir altura (columna de agua) + pérdidas. 
+
+4. Seleccionar el **material de la cañería:**
+
+   - Según presión, temperatura y fluido.
+   - Podría ser acero inoxidable, materiales plásticos, etc.
+
+5. Calcular el **diámetro de los caños:**
+
+   - En función del caudal y velocidad admisible
+   - Evitar velocidades muy altas (pérdidas/ruido) o muy bajas (no arrastra los sedimentos)
+
+6. Calcular **pérdidas de carga**
+
+   - Considerar fricción en los caños y pérdidas en accesorios (codos, válvulas, etc.)
+   - verificar que la presión final sea suficiente
+
+7. Seleccionar la **bomba**
+
+   - Tener en cuenta presión y caudal
+   - Considerar posible uso de variador de frecuencia
 
 El proceso es **iterativo**: se ajusta varias veces hasta que todo funcione correctamente.
 
