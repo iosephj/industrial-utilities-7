@@ -4,9 +4,6 @@ autor: "José Juarez"
 version: "20/05/26"
 ---
 
-
-<br>
-
 ### Instalaciones de agua
 
 #### Física
