@@ -17,8 +17,8 @@ version: "20/05/26"
 
 ## Unidades
 
-- [Introducción](/intro/index.html)
-- [Instalaciones de agua](/water/index.html)
+- [Introducción](intro/index.html)
+- [Instalaciones de agua](water/index.html)
 
 
 <span hidden>Fin archivo</span>
