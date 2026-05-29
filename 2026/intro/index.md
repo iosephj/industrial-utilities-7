@@ -1,28 +1,36 @@
 ---
-title: "Instalaciones Industriales"
+title: ""
 autor: "José Juarez"
 version: "20/05/26"
 ---
 
+### Introducción
 
-<br>
+#### Revoluciones industriales
 
-<div class="grey3">
-**Año:** 2026
+- [Actividad: 1° Revolución industrial](01-assignment-industrial-revolution1.html)
+- [Actividad: Industria 4.0](02-assignment-industry4.html) <span class = "grey3 size80"> (1 pto)</span>
+- [Quiz: Revoluciones industriales e Industria 4.0]() <span class = "grey3 size80"> (1 pto)</span>
 
-**Profesor:** José Juarez
-</div>
+#### Economía e industria
 
-<br>
+- [Lección](04-lesson-economy.html)
+- [Actividad grupal](04-assignment-economy.html) <span class = "grey3 size80"> (1 pto)</span>
+- [Quiz]() <span class = "grey3 size80"> (1 pto)</span>
 
-## Unidades
+#### TP Especial
 
-- [Introducción](/intro/index.html)
-- [Instalaciones de agua](/water/index.html)
+&emsp;<span class = "grey3 size80">**Requisito:** para poder hacer este trabajo es sumar como mínimo 3.65 puntos en las actividades.</span>
+<br>&emsp;[Consigna](05-tp-spec.html) <span class = "grey3 size80"> (2 ptos)</span>
 
 
+#### Prueba escrita
+
+&emsp;[Consigna](06-written-exam.html) <span class = "grey3 size80"> (4 ptos)</span>
 
 <span hidden>Fin archivo</span>
+
+
 
 </div>
 <!-- HTML style definitions -->

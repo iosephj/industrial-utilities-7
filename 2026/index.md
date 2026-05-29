@@ -4,30 +4,22 @@ autor: "José Juarez"
 version: "20/05/26"
 ---
 
-
-<br>
-
 <div class="grey3">
 **Año:** 2026
 
 **Profesor:** José Juarez
 </div>
 
-<br>
-
 ## Unidades
 
 - [Introducción](intro/index.html)
 - [Instalaciones de agua](water/index.html)
 
-
 <span hidden>Fin archivo</span>
 
 ---
 
-<br>
-
-**Verifica** tu progreso [aquí](https://script.google.com/macros/s/AKfycbyvHb0UdlvLyjDOfbcyq1EIbvj0KpIKTzec9dcPJwlIu34WPe4EptGnaYw7xaRJ4naX4Q/exec) poniendo como clave las dos primeras letras de tu nombre completo. Ejemplo: Para Juan Eduardo Juarez la clave sería: **juedju**.
+**Verifica** tu progreso [aquí](https://script.google.com/macros/s/AKfycbyvHb0UdlvLyjDOfbcyq1EIbvj0KpIKTzec9dcPJwlIu34WPe4EptGnaYw7xaRJ4naX4Q/exec) poniendo como clave las dos primeras letras de tu nombre completo (en minúscula, sin tíldes y según aparece en el Xhendra). Ejemplo: Para Juan Eduardo Juarez Pérez la clave sería: **juedjupe** (primero nombres después apellidos).
 
 </div>
 <!-- HTML style definitions -->

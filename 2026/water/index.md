@@ -9,31 +9,35 @@ version: "20/05/26"
 #### Física
 
 - [Lección](01-lesson-physic.html)
-- [Tarea: Problemas](01-assignment-physic.html)
-- [Quiz (1pto)]()
+- [Actividad: Problemas](01-assignment-physic.html)
+- [Quiz](01-quiz-physic.html) <span class = "grey3 size80"> (1 pts)</span>
 
 #### Tecnología
 
 - [Lección](02-lesson-tech.html)
-- [Tarea: Análisis de costo (2ptos)](02-assignment-tech.html)
+- [Actividad: Análisis de costo](02-assignment-tech.html) <span class = "grey3 size80"> (2 pts)</span>
 
 #### Diseño aplicado a la industria
 
 - [Lección: Diseño básico 1](04-lesson-industry1.html)
-- [Tarea: Problema 1 (1pto)](04-assignment-industry1.html)
+- [Actividad: Problema 1](04-assignment-industry1.html) <span class = "grey3 size80"> (1 pts)</span>
 - [Lección: Diseño básico 2](05-lesson-industry2.html)
-- [Tarea: Problema 2 (1pto)](05-assignment-industry2.html)
+- [Actividad: Problema 2](05-assignment-industry2.html) <span class = "grey3 size80"> (1 pts)</span>
 
 #### Trabajo Práctico
 
-- [Consigna (2ptos)](06-tp-2026.html)
+&emsp;[Consigna](06-tp-2026.html) <span class = "grey3 size80"> (2 pts)</span>
 
 #### Trabajo Práctico especial
 
-Requisito: Tener completo Problema 1 y problema 2
+&emsp;<span class = "grey3 size80">**Requisito:** Tener completo Problema 1 y problema 2.</span>
+<br> &emsp;[Consigna](07-tp_esp_agua_25.html) <span class = "grey3 size80"> (2 pts)</span>
 
-- [Consigna (2ptos)](07-tp_esp_agua_25.html)
+#### Prueba escrita
 
+&emsp;<span class = "grey3 size80">**Orientaciones:** Es sin celular y a carpeta abierta, es decir se puede tener resúmenes propios y trabajos hechos pero no hojas impresas. Dura poco tiempo, pocos minutos. Son preguntas sobre temas de diseño y sobre el trabajo práctico. Puede haber algún cálculo. Traer calculadora.</span> <span class = "grey3 size80"> (2 pts)</span>
+
+<span hidden>&emsp;[Consigna]() <span class = "grey3 size80"> (2 pts)</span></span>
 
 <span hidden>Fin archivo</span>
 
