@@ -9,6 +9,8 @@ version: "10/065/26"
 #### Gases y combustión
 
 - [Actividad: Tipos de gas y sus características](01-assignment-gas-types.html)
+- [Lección: Gases y combustión](02-lesson-gas-combustion.html)
+- [Actividad: Análisis y problemas](02-assignment-gas-combustion.html)
 
 
 <div hidden>
