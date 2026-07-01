@@ -12,6 +12,17 @@ version: "10/065/26"
 - [Lección: Gases y combustión](02-lesson-gas-combustion.html)
 - [Actividad: Análisis y problemas](02-assignment-gas-combustion.html)
 
+#### Instalaciones domiciliarias
+
+- [Lección](03-lesson-gas-house.html)
+- [Actividad: Problemas](03-assignment-gas-house.html) <span class = "grey3 size80"> (1 pts)</span>
+
+#### Normativa y seguridad
+
+- [Lección](04-lesson-gas-safety.html)
+- [Actividad: Problemas](04-assignment-gas-safety.html) <span class = "grey3 size80"> (1 pts)</span>
+
+
 
 <div hidden>
 
