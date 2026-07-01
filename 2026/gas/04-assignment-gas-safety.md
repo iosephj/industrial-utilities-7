@@ -10,7 +10,7 @@ version: "07/01/26"
 
 **1)** Busca las normas NAG 200 y NAG 201 en la web de Enargás (u otro lugar). El punto "1.3" de la NAG 201 define alta, media y baja presión. Escribir los valores que comprende cada una.
 
-**2)** En el contexto de las instalaciones domiciliarias la NAG 200 dentro del punto "1.3" define los llamados "**artefactos** para gas. Copia textualmente esta definición ya que cuando se hable de "artefactos" tienes que saber bien de que se trata.
+**2)** En el contexto de las instalaciones domiciliarias la NAG 200 (edición 2019 en consulta pública) dentro del punto "1.5" define los llamados "**artefactos de gas A, B y C**" para gas. Responde: ¿A qué tipo corresponde un calefón? ¿A qué tipo corresponde una estufa de tiro balanceado?
 
 **3)** Un aspecto clave es el control de hermeticidad de una instalación. Investiga en el reglamento de instalaciones domiciliarias NAG 200 cómo se hace una prueba de hermeticidad en instalaciones nuevas de baja presión.
 
