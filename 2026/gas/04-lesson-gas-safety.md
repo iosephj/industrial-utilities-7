@@ -34,7 +34,7 @@ Abajo un ejemplo de un artículo de la NAG-200:
 4.10.8 Las figuras 4.2 y 4.3 muestran a modo de ejemplo, la ubicación de las válvulas de corte en una instalación unifamiliar y en un edificio de viviendas.
 :::
 
-- Fig. 4.2 [⌕](../../images/vivienda_esquema.png)
+- Fig. 4.2 [⌕](../../images/gas/vivienda-esquema-nag200.png)
 - Fig. 4.3 [⌕](../../images/gas/seguridad-edificio-viviendas-esquema-nag200.png)
 
 :::
