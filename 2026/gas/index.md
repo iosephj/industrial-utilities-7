@@ -22,6 +22,12 @@ version: "10/065/26"
 - [Lección](04-lesson-gas-safety.html)
 - [Actividad: Problemas](04-assignment-gas-safety.html) <span class = "grey3 size80"> (1 pts)</span>
 
+#### Instalaciones industriales
+
+- [Lección](05_lesson_industry_components.html)
+- [Actividad: Preguntas](05_assignment_industry_components.html) <span class = "grey3 size80"> (1 pts)</span>
+
+
 
 
 <div hidden>
