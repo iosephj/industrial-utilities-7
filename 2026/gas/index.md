@@ -24,8 +24,16 @@ version: "10/065/26"
 
 #### Instalaciones industriales
 
+#### Componentes
+
 - [Lección](05_lesson_industry_components.html)
 - [Actividad: Preguntas](05_assignment_industry_components.html) <span class = "grey3 size80"> (1 pts)</span>
+
+#### Diseño y cálculo
+
+- [Lección](06_assignment_industry_design.html)
+- [Trabajo práctico](06-lesson-industry-design.html) <span class = "grey3 size80"> (2 pts)</span>
+
 
 
 
