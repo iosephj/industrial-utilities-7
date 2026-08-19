@@ -31,8 +31,8 @@ version: "10/065/26"
 
 #### Diseño y cálculo
 
-- [Lección](06_assignment_industry_design.html)
-- [Trabajo práctico](06-lesson-industry-design.html) <span class = "grey3 size80"> (2 pts)</span>
+- [Lección](06-lesson-industry-design.html)
+- [Trabajo práctico](06_assignment_industry_design.html) <span class = "grey3 size80"> (2 pts)</span>
 
 
 
