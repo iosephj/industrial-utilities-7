@@ -10,7 +10,8 @@ version: "10/065/26"
 
 - [Actividad: Tipos de gas y sus características](01-assignment-gas-types.html)
 - [Lección: Gases y combustión](02-lesson-gas-combustion.html)
-- [Actividad: Análisis y problemas](02-assignment-gas-combustion.html)
+- [Actividad: Análisis y problemas](02-assignment-gas-combustion.html) <span class = "grey3 size80"> (1 pts)</span>
+
 
 #### Instalaciones domiciliarias
 
@@ -24,19 +25,25 @@ version: "10/065/26"
 
 #### Instalaciones industriales
 
-#### Componentes
+##### Componentes
 
 - [Lección](05_lesson_industry_components.html)
 - [Actividad: Preguntas](05_assignment_industry_components.html) <span class = "grey3 size80"> (1 pts)</span>
 
-#### Diseño y cálculo
+##### Diseño y cálculo
 
 - [Lección](06-lesson-industry-design.html)
 - [Trabajo práctico](06_assignment_industry_design.html) <span class = "grey3 size80"> (2 pts)</span>
 
+#### Prueba
 
+- Temas principales: Componentes, diseño y cálculo de instalaciones industriales. <span class = "grey3 size80"> (2 pts)</span>
 
+#### Trabajo práctico especial
 
+- [Consigna](tp_especial.html) <span class = "grey3 size80"> (2 pts)</span>
+
+Condición para realizarlo: tener todas las actividades anteriores hechas y corregidas (salvo el tp)
 
 <div hidden>
 
