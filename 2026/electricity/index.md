@@ -1,30 +1,21 @@
 ---
-title: "Instalaciones Industriales"
+title: ""
 autor: "José Juarez"
-version: "20/05/26"
+version: "16/09/26"
 ---
 
-<div class="grey3">
-**Año:** 2026
+### Instalaciones eléctricas
 
-**Profesor:** José Juarez
-</div>
+#### Fundamentos de electricidad
 
-## Unidades
-
-- [Introducción](intro/index.html)
-- [Instalaciones de agua](water/index.html)
-- [Instalaciones de gas](gas/index.html)
-- [Instalaciones eléctricas](electricity/index.html)
+- [Actividad: Problemas y mediciones de fundamentos](01-assignment-fundamentals.html)
+- [Lección: Fundamentos](01-lesson-fundamentals.html)
 
 
 <span hidden>Fin archivo</span>
 
----
 
-**Verifica** tu avance [aquí](https://script.google.com/macros/s/AKfycbyvHb0UdlvLyjDOfbcyq1EIbvj0KpIKTzec9dcPJwlIu34WPe4EptGnaYw7xaRJ4naX4Q/exec) poniendo como clave las dos primeras letras de cada uno de tus apellidos y luego las de cada uno de tus nombres. Ejemplo: Para `Juarez Pérez Juan Eduardo` la clave sería: **jupejued** (primero apellidos y después nombres).
 
-</div>
 <!-- HTML style definitions -->
 <style>
 /* Colors */
