@@ -14,7 +14,9 @@ No alcanza con conocer las fórmulas; hay que comprender qué determina el compo
 
 ### 1. El punto de partida: problemas que parecen sencillos
 
-**Consigna:** Escribí qué creés que sucede y por qué. No alcanza con aplicar una fórmula: hay que explicar el comportamiento del sistema.
+En este punto no se evalúa el conocimiento correcto. Es un punto de partida para después con más datos verificar y aprender que estaba correcto y que faltaba.
+
+**Consigna:** Sin ayuda, simplemente con lo que sabes, escribí qué creés que sucede y por qué. No alcanza con mostrar una fórmula: hay que explicar el comportamiento del sistema.
 
 **a)** Un capacitor y un motor dc tipo de juguete: Un supercapacitor de 1 F se carga a 5 V. Al conectarlo a un motor de corriente continua, la tensión cae mucho y el motor no arranca. ¿Cómo puede ocurrir si el capacitor estaba cargado a 5 V?
 
@@ -27,13 +29,12 @@ No alcanza con conocer las fórmulas; hay que comprender qué determina el compo
 
 ### 2. Experiencia práctica: tensión, corriente y resistencia
 
-Aquí medirás parámetros en un circuito cuya carga no es una resistencia pura. Consigue en el pañol lo que puedas conseguir allí, el resto puedes consultar al profesor.
+No todas las cargas se comportan igual en un circuito. Aquí medirás parámetros en un circuito cuya carga no es una resistencia pura. Consigue en el pañol lo que puedas conseguir allí, el resto puedes consultar al profesor.
 
 **Consigna:** 
 
-Usar una fuente regulable, una resistencia de 10 ohms (o parecida) y un motor DC tipo 130 (los de juguete). Conectar en serie resistencia y motor y poner la fuente a 5 V. 
-
-* Medir la corriente con el motor detenido (si se puede realizar con seguridad y dentro de las especificaciones).
+Usar una fuente regulable, una resistencia de 10 ohms (o parecida) y un motor DC tipo 130 (los de juguete). Conectar en serie resistencia y motor y poner la fuente a la tensión que te indique el profesor. 
+* Medir la corriente con el motor frenado hasta detenerlo (si se puede realizar con seguridad para no romperlo).
 * Medir la corriente con el motor girando sin carga.
 * Observar cómo cambia la corriente cuando se modifica la tensión o se aplica una carga mecánica moderada (frena un poco el motor).
 * ¿Por qué un motor puede consumir más corriente al arrancar que cuando ya está girando?
@@ -41,27 +42,28 @@ Usar una fuente regulable, una resistencia de 10 ohms (o parecida) y un motor DC
 * Si la fuente es de 10 A ¿eso significa que que obligatoriamente circula 10A?
 
 
-### 3. Actividad de predicción: supercapacitor
+### 3. Análisis de un supercapacitor
 
-El circuito es un supercapacitor de 1 F cargado a 5 V que alimenta un motor DC tipo 130 (de juguete) en serie con una resistencia.
+En la actualidad se está explorando el uso de supercapacitores como fuente de almacenamiento de energía especialmente por su velocidad de carga.
 
-Ten en cuenta que un capacitor ideal cargado a 5 V no mantiene necesariamente 5 V en sus terminales cuando se conecta a una carga real. En el supercapacitor intervienen:
+El campo tiene aun varios desafíos, uno de ellos es que un capacitor real posee una resistencia serie equivalente (ESR). Cuando comienza a circular corriente, esta resistencia produce una caída de tensión. Por eso, aunque el capacitor haya sido cargado a 5 V, al conectarlo a una carga pueden ocurrir dos cosas:
 
-- Su resistencia serie equivalente (ESR).
-- La resistencia de los cables y contactos.
-- La resistencia y el comportamiento del motor.
-- La corriente elevada que puede requerir el arranque.
+- La tensión en los bornes del capacitor puede caer instantáneamente debido a la corriente que circula por su ESR.
+- El capacitor comienza a descargarse, por lo que su tensión continúa disminuyendo con el tiempo.
+
+También intervienen la resistencia de los cables y contactos y las características del motor, cuya corriente puede ser especialmente elevada durante el arranque.
 
 **Consigna:**
 
-Se trata de un Plantear tres casos:
+Supón el circuito formado por un supercapacitor de 1 F cargado a 5 V que alimenta un motor DC tipo 130, en serie con una resistencia.
 
-- **a)** Tensión 5 V   -  Resistencia total aproximada 100 Ω
-- **b)** Tensión 5 V   -  Resistencia total aproximada 10 Ω
-- **c)** Tensión 5 V   -  Resistencia total aproximada 1 Ω
+Al conectarlo a un motor 130 (que funciona entre 1,5 y 6 V o más) e motor no gira y la tensión medida cae rápidamente. En teoría el supercapacitor tiene energía suficiente para mover el motor durante varios segundos.
 
-Calculen la corriente ideal y luego saber explicar: * ¿Qué sucede si la resistencia disminuye? * ¿Qué limita la corriente en un circuito real? * ¿Por qué no es suficiente saber solamente la tensión?
+Dejando de lado la resistencia del bobinado, los cables y los contactos y suponiendo que al momento del arranque circula 0,15 A y el ESR del supercapacitor es de 30 ohms:
 
+- ¿Cuánta tensión quedaría disponible para el motor?
+- ¿Qué sucedería si la ESR fuera \(0,4\,\Omega\)?
+- ¿Qué diferencia hay entre tener mucha capacidad y poder entregar mucha corriente?
 
 ### 4. Potencia
 

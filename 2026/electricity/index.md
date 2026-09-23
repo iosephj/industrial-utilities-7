@@ -8,8 +8,13 @@ version: "16/09/26"
 
 #### Fundamentos de electricidad
 
-- [Actividad: Problemas y mediciones de fundamentos](01-assignment-fundamentals.html)
+- [Actividad: Problemas y mediciones básicos](01-assignment-fundamentals.html) <span class = "grey3 size80"> (1 pts)</span>
 - [Lección: Fundamentos](01-lesson-fundamentals.html)
+
+#### Proyecto de instalación eléctrica
+
+- [1. Introducción](02-project1.html) <span class = "grey3 size80"> (1 pts)</span>
+
 
 
 <span hidden>Fin archivo</span>

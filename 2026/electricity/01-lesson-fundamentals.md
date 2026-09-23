@@ -7,129 +7,151 @@ version: "16/09/26"
 <!-- *** GUIDE START *** -->
 
 
-**Aquí verás que** en las instalaciones reales no alcanza con conocer las fórmulas; hay que comprender qué determina el comportamiento del sistema y qué significa cada magnitud física.
+::: note
+En estas breves notas se intenta orientarte para que más allá de las fórmulas comprendas mejor que cosas determinan el comportamiento de un sistema. Pregunta lo que tengas dudas.
+:::
 
 
-## 1. Tensión, corriente y resistencia: quién determina qué
+## 1. Tensión, corriente y resistencia
 
-<div hidden>Esta es una de las cuestiones que más vale la pena profundizar.</div>
+La **tensión eléctrica** es una diferencia de potencial entre dos puntos. La **corriente eléctrica** es el movimiento de cargas eléctricas a través de un circuito.
 
-En un circuito real, la corriente depende de la tensión disponible y de las características de la carga y del circuito completo.
+En una resistencia óhmica se cumple:
 
-**Tensión disponible** es la diferencia de potencial que la fuente puede mantener entre sus bornes **en esas condiciones de carga**.
+$$
+I=\frac{V}{R}
+$$
 
-Para una resistencia ideal:
+Esto significa que, para una determinada tensión, cuanto menor sea la resistencia, mayor será la corriente.
 
-$I=\frac{V}{R}$
+En un circuito real, la corriente no la determina únicamente la fuente: depende de la **tensión disponible, la carga y las resistencias o impedancias presentes en todo el circuito**.
 
-Pero un motor no es una resistencia constante. Su corriente depende, entre otras cosas, de su velocidad, su carga mecánica y la resistencia de sus bobinados.
+Una fuente de 5 V capaz de entregar 10 A **no obliga a que circulen 10 A**. Los 10 A representan la corriente máxima que la fuente puede entregar bajo determinadas condiciones.
 
-La fuente establece las condiciones de alimentación, pero la carga determina la corriente que toma, en interacción con la impedancia interna de la fuente y las conexiones.
+### El caso del motor
 
-Por otro lado, una fuente de 5 V y 10 A no obliga a que circule 10 A. Significa que puede entregar hasta esa corriente bajo sus condiciones especificadas.
+Un motor no se comporta simplemente como una resistencia constante. Su corriente depende, entre otras cosas, de su velocidad y de la carga mecánica.
 
-
-## 2. ¿Por qué cae la tensión del supercapacitor?
-
-Nos referimos a un supercapacitor de 1 F cargado a 5 V que se conecta con una resistencia en serie de 10 ohms a un motor dc tipo 130 (tipo de juguete).
-
-Modelo conceptual: capacitor, resistencia interna y motor. La resistencia interna provoca una caída de tensión cuando circula corriente.
-
-Un capacitor ideal cargado a 5 V no mantiene necesariamente 5 V en sus terminales cuando se conecta a una carga real. En el supercapacitor intervienen:
-
-* Su resistencia serie equivalente (ESR).
-* La resistencia de los cables y contactos.
-* La resistencia y el comportamiento del motor.
-* La corriente elevada que puede requerir el arranque.
-
-Una aproximación útil es:
-
-Vmotor=Vcapacitor−IRinternaV_{\text{motor}}=V_{\text{capacitor}}-I R_{\text{interna}}Vmotor=Vcapacitor−IRinterna
-
-Esto permite comprender que pocos voltios no garantizan una corriente pequeña. Si la resistencia total es baja, la corriente puede ser elevada.
+Cuando está detenido o arrancando, puede circular una corriente mucho mayor que durante su funcionamiento normal. Si permanece detenido durante demasiado tiempo, el calentamiento de los bobinados puede dañarlo.
 
 
+## 2. El supercapacitor y la caída de tensión
+
+Si un capacitor está cargado a 5 V, inicialmente tiene aproximadamente 5 V entre sus terminales. Al conectarlo a una carga comienza a descargarse, por lo que su tensión disminuye.
+
+Además, los componentes reales tienen cierta resistencia interna. En un supercapacitor esta característica se expresa principalmente mediante su **ESR** (resistencia serie equivalente).
+
+También contribuyen la resistencia de los cables, contactos y demás elementos del circuito.
+
+Una aproximación sencilla es:
+
+$$
+V_{\text{motor}}=
+V_{\text{capacitor}}-I R_{\text{interna}}
+$$
+
+Hay entonces dos fenómenos:
+
+* La corriente produce una **caída de tensión** en las resistencias internas.
+* El capacitor se **descarga**, por lo que su propia tensión va disminuyendo.
+
+Por eso, aunque el capacitor haya comenzado cargado a 5 V, el motor puede recibir una tensión mucho menor.
+
+Una tensión pequeña tampoco implica necesariamente una corriente pequeña: si la resistencia total del circuito es baja, la corriente puede ser elevada.
 
 
-### 4. Potencia: qué significa realmente 1 W
+## 3. Potencia eléctrica
+
+La potencia indica la **rapidez con la que se transfiere o transforma energía**:
+
+$$
+P=\frac{E}{t}
+$$
+
+Un watt equivale a un joule por segundo:
+
+$$
+1\text{ W}=1\text{ J/s}
+$$
+
+En un circuito eléctrico:
+
+$$
+P=VI
+$$
+
+Para una resistencia óhmica también podemos utilizar:
+
+$$
+P=I^2R
+$$
+
+o
+
+$$
+P=\frac{V^2}{R}
+$$
+
+La potencia no significa necesariamente calor. Depende de qué hace el dispositivo con la energía.
+
+Una resistencia transforma principalmente la energía eléctrica en calor mediante el **efecto Joule**. Un motor transforma parte de la energía eléctrica en energía mecánica y otra parte en calor y otras pérdidas.
 
 
-## Potencia
+## 4. Potencia nominal y consumo real
 
-La potencia es la rapidez con la que se transfiere o transforma energía.
+Que un equipo indique **1 W** no significa necesariamente que consuma exactamente 1 W en cualquier situación.
 
-P=EtP=\frac{E}{t}P=tE
+La indicación puede corresponder a su potencia nominal, típica, máxima, de entrada o de salida, según el dispositivo y las especificaciones del fabricante.
 
-Un equipo de 1 W transforma o transfiere energía a razón de 1 joule por segundo, en las condiciones en las que se especifica esa potencia.
+La corriente real depende de las condiciones de funcionamiento y de las características del equipo.
 
-No significa necesariamente que toda esa energía se convierta en calor.
+Por ejemplo, si un dispositivo de 12 V consume efectivamente 1 W en determinadas condiciones:
 
-### Ejemplos
+$$
+I=\frac{P}{V}
+=\frac{1}{12}
+\approx0,083\text{ A}
+$$
 
-![Resistor rated at 100 ohms on black](https://images.openai.com/static-rsc-4/qNwNDFhpo9nmlDH1YYZvQJe12ZDsNhlc3VtUEWO9XzNcrfXHmNEjFboDIaUnL_rFc4a-NTpDLfrdknybBBtgO40YSP2Yrw-eWiVj_y4ZdnbZOCroBCYamUj8OAJMeqWYnQBdE-FpOZnImOOtLrAF9pEZEN6nEQioRJLt1-SapNFm1F2ylMpLPopTx1jiIQMS?purpose=inline)
-
-Resistencia
-
-La energía eléctrica se transforma principalmente en calor.
-
-![DC Motor which is very unique made of plastic body with fan blade attached to its shaft](https://images.openai.com/static-rsc-4/m1eLVOuLH_1PK3O_HgKrS7jhgyc4eYdgrxr9A19Bk3aXpJhIU7TGFtoEMQwd62sGK8ZLXHfZtZe1Ea28GzUkRNF8qPIewGg3SzH8LFVzGmj_AOhlXWErmP7gjXN2m9u26zSsgSmbzGudqqzDKKyf_1ojCokeGR3cVn8idWkw1c3VTBltjbF82oMTMTrgk2h6?purpose=inline)
-
-Motor eléctrico
-
-La energía se transforma en movimiento, calor y otras pérdidas.
-
-El efecto Joule es un mecanismo de transformación de energía eléctrica en calor, pero no es la definición de potencia.
-
-Para una resistencia:
-
-P=VI=I2R=V2RP=VI=I^2R=\frac{V^2}{R}P=VI=I2R=RV2
-
-### Actividad práctica
-
-Con una resistencia de potencia y una fuente regulable:
-
-1. Calcular la potencia con una tensión determinada.
-
-2. Medir la corriente.
-
-3. Verificar la potencia con P=VIP=VIP=VI.
-
-4. Observar el calentamiento, sin exceder la potencia nominal de la resistencia.
+Pero no podemos afirmar que esa corriente circulará siempre solamente porque el dispositivo tenga escrita la indicación «1 W».
 
 
+## 5. De potencia a energía
+
+La potencia indica **a qué velocidad** se utiliza o transforma la energía. La energía indica **cuánto se utilizó o transformó**.
+
+Para una potencia constante:
+
+$$
+E=P\cdot t
+$$
+
+Por ejemplo:
+
+$$
+1000\text{ W}\cdot2\text{ h}=2000\text{ Wh}=2\text{ kWh}
+$$
+
+El **W** es una unidad de potencia.
+
+El **Wh** y el **kWh** son unidades de energía.
+
+Esto es fundamental para interpretar una factura eléctrica: la empresa factura principalmente la **energía consumida**, expresada habitualmente en kWh, aunque la factura también puede incluir cargos relacionados con la potencia contratada o demandada.
 
 
+## 6. Electricidad y gas
 
+Para comparar consumos energéticos no alcanza con comparar directamente los números de una factura.
 
+Hay que considerar, entre otras cosas:
 
+* La cantidad de energía suministrada.
+* La unidad utilizada para facturar.
+* El precio de esa energía.
+* El rendimiento del equipo.
+* La cantidad de energía que finalmente resulta útil.
 
-
-### 1. Combustión
-
-<!-- Image -->
-<br>
-   <center>![](gas/combustion-triangle.png){width=400px}</center>
-<br>
-
-La **combustión** es una reacción química entre un combustible y un comburente (generalmente el oxígeno del aire) que libera energía en forma de calor y, muchas veces, luz.
-
-Para que ocurra una combustión se necesitan tres elementos:
-
-* Combustible.
-* Oxígeno (comburente).
-* Energía de activación (calor, chispa, llama, etc.).
-
-Estos tres elementos forman el llamado **triángulo del fuego**.
-
-<br>
-
-### 2. Productos de la combustión
-
-<!-- Image -->
-<br>
-   <center>![](gas/combustion-flame-colors.png){width=400px}</center>
-<br>
-
+Por ejemplo, un equipo eléctrico puede consumir cierta cantidad de energía eléctrica y convertir una parte en energía mecánica, térmica, luminosa, etc. Un equipo a gas recibe energía química y transforma una parte en energía térmica útil, con pérdidas.
 
 
 

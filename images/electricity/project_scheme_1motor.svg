@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="94.658997mm"
+   height="52.580002mm"
+   viewBox="-2 -2 94.658996 52.580002"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="project_scheme_1motors.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     showguides="false"
+     inkscape:zoom="1.8707912"
+     inkscape:cx="158.22183"
+     inkscape:cy="124.54623"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-39.922754,-56.42013)">
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#df9d43;stroke-width:0.299999;stroke-linecap:round;stroke-miterlimit:0;stroke-dasharray:2.39999, 1.2;stroke-dashoffset:0"
+       id="rect234"
+       width="89.700005"
+       height="44.700001"
+       x="40.731426"
+       y="60.149998" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.264583"
+       x="42.792847"
+       y="96.439232"
+       id="text1004"><tspan
+         sodipodi:role="line"
+         id="tspan1002"
+         style="font-size:3.175px;stroke-width:0.264583"
+         x="42.792847"
+         y="96.439232">Entrada</tspan></text>
+    <rect
+       style="fill:#df9d43;fill-opacity:1;stroke:#df9d43;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:0"
+       id="rect1056"
+       width="1.1999999"
+       height="7.6999998"
+       x="40.072754"
+       y="91.67955" />
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:0"
+       id="rect1058"
+       width="2.000102"
+       height="4.5002294"
+       x="40.902084"
+       y="86.104393" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 40.802081,90.454614 1.9501,-4.350221"
+       id="path1123" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.13386;stroke-linecap:round;stroke-miterlimit:0"
+       d="m 155.15752,332.07993 v -6.07905 h 2.74284 2.74283 l -0.26143,0.61421 c -0.5475,1.2863 -5.09156,11.39013 -5.15629,11.46515 -0.0374,0.0433 -0.0679,-2.65683 -0.0679,-6.00031 z"
+       id="path1194"
+       transform="scale(0.26458333)" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.264583"
+       x="43.702229"
+       y="87.104446"
+       id="text1198"><tspan
+         sodipodi:role="line"
+         id="tspan1196"
+         style="stroke-width:0.264583"
+         x="43.702229"
+         y="87.104446">Tablero</tspan><tspan
+         sodipodi:role="line"
+         style="stroke-width:0.264583"
+         x="43.702229"
+         y="91.073196"
+         id="tspan1200">principal</tspan></text>
+    <rect
+       style="fill:#6495ed;fill-opacity:1;stroke:#6495ed;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:0"
+       id="rect1928-1"
+       width="61.421429"
+       height="0.69999999"
+       x="57.611427"
+       y="72.156792" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#276cdf;stroke-width:0.264583"
+       x="76.517616"
+       y="76.257027"
+       id="text2693"><tspan
+         sodipodi:role="line"
+         id="tspan2691"
+         style="fill:#276cdf;stroke-width:0.264583"
+         x="76.517616"
+         y="76.257027">Cinta transportadora</tspan></text>
+    <rect
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:0"
+       id="rect2795"
+       width="5.2328568"
+       height="2.5457141"
+       x="84.715714"
+       y="60.248569" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 89.981366,62.703199 84.781103,60.173781"
+       id="path2914"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1.13386;stroke-linecap:round;stroke-miterlimit:0"
+       d="m 331.41057,232.12104 -7.67605,-3.74174 h 7.78021 7.78021 v 3.74174 c 0,2.05795 -0.0469,3.74173 -0.10415,3.74173 -0.0573,0 -3.55838,-1.68378 -7.78022,-3.74173 z"
+       id="path3024"
+       transform="scale(0.26458333)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 41.802131,86.004386 V 61.503136"
+       id="path3026" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 41.802131,61.803152 84.604317,61.503136"
+       id="path3028" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 85.528927,62.794284 V 64.1025 H 60.248572 V 67.32 h 0.141427 v 0.282856"
+       id="path3036" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;fill:#f44336;stroke-width:0.264583"
+       x="45.327858"
+       y="65.127861"
+       id="text3044"><tspan
+         sodipodi:role="line"
+         id="tspan3042"
+         style="fill:#f44336;stroke-width:0.264583"
+         x="45.327858"
+         y="65.127861">A</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82222px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.264583"
+       x="70.714287"
+       y="66.542145"
+       id="text3048"><tspan
+         sodipodi:role="line"
+         id="tspan3046"
+         style="font-size:2.82222px;fill:#f44336;stroke-width:0.264583"
+         x="70.714287"
+         y="66.542145">B</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.264583"
+       x="72.835709"
+       y="58.69286"
+       id="text3060"><tspan
+         sodipodi:role="line"
+         id="tspan3058"
+         style="stroke-width:0.264583"
+         x="72.835709"
+         y="58.69286">Tablero para la máquina</tspan></text>
+    <circle
+       style="fill:none;stroke:#000000;stroke-width:0.3;stroke-linecap:round;stroke-miterlimit:0"
+       id="path566"
+       cx="60.197754"
+       cy="69.694412"
+       r="2.2628572" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;line-height:1.25;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:0.264583"
+       x="58.924896"
+       y="70.789291"
+       id="text622"><tspan
+         sodipodi:role="line"
+         id="tspan620"
+         style="font-size:3.175px;stroke-width:0.264583"
+         x="58.924896"
+         y="70.789291">M</tspan></text>
+  </g>
+</svg>
