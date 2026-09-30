@@ -13,9 +13,8 @@ version: "16/09/26"
 
 #### Proyecto de instalación eléctrica
 
-- [1. Introducción](02-project1.html) <span class = "grey3 size80"> (1 pts)</span>
-
-
+- [Etapa 1: Introducción](02-project1.html) <span class = "grey3 size80"> (1 pts)</span>
+- [Etapa 2: Datos y decisiones básicas](03-project2.html) <span class = "grey3 size80"> (1 pts)</span>
 
 <span hidden>Fin archivo</span>
 

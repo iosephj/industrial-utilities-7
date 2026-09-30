@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Proyecto - Etapa 2</title>
+  <style>
+
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+
+ul.task-list[class]{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+font-size: inherit;
+width: 0.8em;
+margin: 0 0.8em 0.2em -1.6em;
+vertical-align: middle;
+}
+</style>
+  <style type="text/css">:root {--black: #000000--light-gray-1: #f2f2f2; --light-gray-2: #cccccc; --light-gray-3: #b3b3b3; --mid-gray: #999999; --dark-gray-1: #808080; --dark-gray-2: #666666; --dark-gray-3: #555555; --dark-gray-4: #333333; --dark-gray-5: #222222; --zebra-bg: #f8f8f8; --blue-1: #6495ed; --blue-2: #276cdf; --blue-3: #003366; --blue-4: #2f5597; --blue-5: #184965; --blue-6: #1f4e79; --cyan-1: #7dbed8; --cyan-2: #27a2db; --green-1: #81b524; --red-1: #ec5469; --red-2: #f44336; --rose-1: #ec9998; --gold-1: #df9d43; --orange-1: #fda556; --orange-2: #ff9505; --purple-1: #ff40ff; --purple-2: #d164d7; }:root {--text-color: var(--dark-gray-5); --secondary-text-color: var(--dark-gray-4); --title-color: var(--blue-6); --heading-color: var(--dark-gray-5);--border-color: var(--light-gray-3); --example-border-color: var(--blue-6); --solutions-text-color: var(--dark-gray-1); --warning-color: var(--orange-2); --note-color: var(--dark-gray-2);--error-color: var(--red-2); --figure-caption-color: var(--dark-gray-3); --figure-source-color: var(--dark-gray-2); --background-color: #FFFFFF; --example-background-color: #FFFFFF; }body {font-family: Arial, sans-serif;font-size: 1.3em;color: var(--text-color);line-height: 1.4;margin: auto;padding: 1.5em;}h1 {color: var(--title-color); border-bottom: 1px solid var(--border-color);padding-bottom: 0.3em;}h2 {margin-top: 1.8em;margin-bottom: 0.4em;color: var(--heading-color);}h3 {margin-top: 1.1em;margin-bottom: 0.3em;color: var(--heading-color);}ol {list-style: none;counter-reset: item;margin-left: 0;padding-left: 0.5em; }ol > li {counter-increment: item;}ol > li::before {content: counter(item) ") ";font-weight: bold;}blockquote {margin: 1em 0;padding: 0 15px;color: var(--dark-gray-2);border-left: 4px solid var(--light-gray-2);}table {border-collapse: collapse;width: 100%;margin: 1em 0;}table th, table td {padding: 6px 13px;border: 1px solid var(--light-gray-2);}table th {font-weight: bold;background-color: var(--light-gray-1);}table tr:nth-child(2n) {background-color: var(--zebra-bg);}code {font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;font-size: 85%;background-color: rgba(0,0,0,0.04);padding: 0.2em 0.4em;border-radius: 3px;}pre {padding: 16px;overflow: auto;font-size: 85%;line-height: 1.45;background-color: var(--light-gray-1);border-radius: 3px;margin-bottom: 16px;}pre code {background-color: transparent;padding: 0;font-size: 100%;}a {color: var(--blue-6);text-decoration: none;}a:hover {text-decoration: underline;}.example {display: block;background: var(--example-background-color);margin: 0.6em 0;padding-left: 0.6em; border-left: 2px solid var(--example-border-color);}.activity {margin: 0.6em 0;padding-left: 0.6em; }.solutions {display: block;margin-top: 0.6em;font-size: 0.85em; color: var(--solutions-text-color);}.warning {display: block;font-size: 0.8em;color: var(--warning-color);}.note {display: block;margin: 0.6em 0;padding-left: 0.6em; color: var(--note-color);font-size: 0.8em;}.figure {display: block;text-align: center;margin: 1.5em auto;}.figure img {display: block;max-width: 100%;height: auto;margin: 0 auto 0 auto; }.figure small {display: block;font-size: 0.7em;color: var(--figure-caption-color);margin-top: -0.5em }code .kw { color: #000000; font-weight: bold; } code .dt { color: #ed6a43; } code .dv { color: #009999; } code .bn { color: #009999; } code .fl { color: #009999; } code .ch { color: #009999; } code .st { color: #183691; } code .co { color: #969896; font-style: italic; }code .ot { color: #0086b3; } code .al { color: #a61717; font-weight: bold; } code .fu { color: #63a35c; } code .er { color: #a61717; background-color: #e3d2d2; } code .cn { color: #008080; } code .cf { color: #000000; font-weight: bold; } code .op { color: #000000; } code .bu { color: #000000; } code .pp { color: #999999; font-weight: bold; } code .va { color: #008080; } @media print {:root {--text-color: #000000;--secondary-text-color: #333333;--title-color: #000000; --heading-color: #000000;--border-color: #999999;--example-border-color: #555555;--figure-caption-color: #333333;--figure-source-color: #555555;--solutions-text-color: #444444;--note-color: #000000;--warning-color: #000000;--error-color: #000000;--background-color: #FFFFFF;--example-background-color: #FFFFFF;}@page {size: A4;margin: 1.2cm;}body {font-family: Arial, Helvetica, sans-serif;font-size: 10.5pt;line-height: 1.35;color: #000;column-fill: auto; column-count: 2;column-gap: 1cm;}h1 { font-size: 14pt; margin: 0 0 6pt 0; }h2 { font-size: 12pt; margin: 8pt 0 4pt 0; }h3 { font-size: 11pt; margin: 6pt 0 3pt 0; }h1, h2, h3 {break-after: avoid;break-inside: avoid;}p {margin: 0 0 4pt 0;text-align: justify;}blockquote {border-left: 3px solid #666666;color: #333333;margin: 6pt 0;padding-left: 8pt;}ul, ol {margin: 0 0 4pt 12pt;padding: 0;}li { margin-bottom: 2pt; }code, pre {font-family: "Courier New", Courier, monospace;font-size: 9.5pt;background: var(--light-gray-1);padding: 1px 3px;border-radius: 2px;}pre {padding: 6pt;overflow: hidden;break-inside: avoid;}img {max-width: 100%;height: auto;break-inside: avoid;margin: 12pt auto; }table {width: 100%;border-collapse: collapse;font-size: 9.5pt;}th, td {border: 1px solid #000;padding: 3pt;}table tr:nth-child(2n) {background-color: var(--light-gray-1); }nav, footer, .no-print {display: none;}.example,.activity,.solutions,.note,.warning,blockquote {break-inside: avoid;}}</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Proyecto - Etapa 2</h1>
+</header>
+<!-- *** GUIDE START *** -->
+<h2 id="datos-iniciales-y-esquema-físico-de-la-instalación">Datos
+Iniciales y Esquema Físico de la Instalación</h2>
+<h3 id="esquema-físico">1. Esquema físico</h3>
+<div class="figure">
+<p><img role="img" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gQ3JlYXRlZCB3aXRoIElua3NjYXBlIChodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy8pIC0tPgoKPHN2ZwogICB3aWR0aD0iOTQuNjU4OTk3bW0iCiAgIGhlaWdodD0iNTIuNTgwMDAybW0iCiAgIHZpZXdCb3g9Ii0yIC0yIDk0LjY1ODk5NiA1Mi41ODAwMDIiCiAgIHZlcnNpb249IjEuMSIKICAgaWQ9InN2ZzUiCiAgIGlua3NjYXBlOnZlcnNpb249IjEuMi4yICg3MzJhMDFkYTYzLCAyMDIyLTEyLTA5KSIKICAgc29kaXBvZGk6ZG9jbmFtZT0icHJvamVjdF9zY2hlbWVfMW1vdG9ycy5zdmciCiAgIHhtbG5zOmlua3NjYXBlPSJodHRwOi8vd3d3Lmlua3NjYXBlLm9yZy9uYW1lc3BhY2VzL2lua3NjYXBlIgogICB4bWxuczpzb2RpcG9kaT0iaHR0cDovL3NvZGlwb2RpLnNvdXJjZWZvcmdlLm5ldC9EVEQvc29kaXBvZGktMC5kdGQiCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c3ZnPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiAgPHNvZGlwb2RpOm5hbWVkdmlldwogICAgIGlkPSJuYW1lZHZpZXc3IgogICAgIHBhZ2Vjb2xvcj0iI2ZmZmZmZiIKICAgICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgICBib3JkZXJvcGFjaXR5PSIxLjAiCiAgICAgaW5rc2NhcGU6c2hvd3BhZ2VzaGFkb3c9IjIiCiAgICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAuMCIKICAgICBpbmtzY2FwZTpwYWdlY2hlY2tlcmJvYXJkPSIwIgogICAgIGlua3NjYXBlOmRlc2tjb2xvcj0iI2QxZDFkMSIKICAgICBpbmtzY2FwZTpkb2N1bWVudC11bml0cz0ibW0iCiAgICAgc2hvd2dyaWQ9ImZhbHNlIgogICAgIHNob3dndWlkZXM9ImZhbHNlIgogICAgIGlua3NjYXBlOnpvb209IjEuODcwNzkxMiIKICAgICBpbmtzY2FwZTpjeD0iMTU4LjIyMTgzIgogICAgIGlua3NjYXBlOmN5PSIxMjQuNTQ2MjMiCiAgICAgaW5rc2NhcGU6d2luZG93LXdpZHRoPSIxMzY2IgogICAgIGlua3NjYXBlOndpbmRvdy1oZWlnaHQ9IjcwNSIKICAgICBpbmtzY2FwZTp3aW5kb3cteD0iLTgiCiAgICAgaW5rc2NhcGU6d2luZG93LXk9Ii04IgogICAgIGlua3NjYXBlOndpbmRvdy1tYXhpbWl6ZWQ9IjEiCiAgICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0ibGF5ZXIxIiAvPgogIDxkZWZzCiAgICAgaWQ9ImRlZnMyIiAvPgogIDxnCiAgICAgaW5rc2NhcGU6bGFiZWw9IkNhcGEgMSIKICAgICBpbmtzY2FwZTpncm91cG1vZGU9ImxheWVyIgogICAgIGlkPSJsYXllcjEiCiAgICAgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTM5LjkyMjc1NCwtNTYuNDIwMTMpIj4KICAgIDxyZWN0CiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTojZGY5ZDQzO3N0cm9rZS13aWR0aDowLjI5OTk5OTtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDowO3N0cm9rZS1kYXNoYXJyYXk6Mi4zOTk5OSwgMS4yO3N0cm9rZS1kYXNob2Zmc2V0OjAiCiAgICAgICBpZD0icmVjdDIzNCIKICAgICAgIHdpZHRoPSI4OS43MDAwMDUiCiAgICAgICBoZWlnaHQ9IjQ0LjcwMDAwMSIKICAgICAgIHg9IjQwLjczMTQyNiIKICAgICAgIHk9IjYwLjE0OTk5OCIgLz4KICAgIDx0ZXh0CiAgICAgICB4bWw6c3BhY2U9InByZXNlcnZlIgogICAgICAgc3R5bGU9ImZvbnQtc2l6ZTozLjE3NXB4O2xpbmUtaGVpZ2h0OjEuMjU7Zm9udC1mYW1pbHk6QXJpYWw7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpBcmlhbDtzdHJva2Utd2lkdGg6MC4yNjQ1ODMiCiAgICAgICB4PSI0Mi43OTI4NDciCiAgICAgICB5PSI5Ni40MzkyMzIiCiAgICAgICBpZD0idGV4dDEwMDQiPjx0c3BhbgogICAgICAgICBzb2RpcG9kaTpyb2xlPSJsaW5lIgogICAgICAgICBpZD0idHNwYW4xMDAyIgogICAgICAgICBzdHlsZT0iZm9udC1zaXplOjMuMTc1cHg7c3Ryb2tlLXdpZHRoOjAuMjY0NTgzIgogICAgICAgICB4PSI0Mi43OTI4NDciCiAgICAgICAgIHk9Ijk2LjQzOTIzMiI+RW50cmFkYTwvdHNwYW4+PC90ZXh0PgogICAgPHJlY3QKICAgICAgIHN0eWxlPSJmaWxsOiNkZjlkNDM7ZmlsbC1vcGFjaXR5OjE7c3Ryb2tlOiNkZjlkNDM7c3Ryb2tlLXdpZHRoOjAuMztzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDowIgogICAgICAgaWQ9InJlY3QxMDU2IgogICAgICAgd2lkdGg9IjEuMTk5OTk5OSIKICAgICAgIGhlaWdodD0iNy42OTk5OTk4IgogICAgICAgeD0iNDAuMDcyNzU0IgogICAgICAgeT0iOTEuNjc5NTUiIC8+CiAgICA8cmVjdAogICAgICAgc3R5bGU9ImZpbGw6bm9uZTtmaWxsLW9wYWNpdHk6MTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MC4zO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjAiCiAgICAgICBpZD0icmVjdDEwNTgiCiAgICAgICB3aWR0aD0iMi4wMDAxMDIiCiAgICAgICBoZWlnaHQ9IjQuNTAwMjI5NCIKICAgICAgIHg9IjQwLjkwMjA4NCIKICAgICAgIHk9Ijg2LjEwNDM5MyIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDowLjI2NDU4M3B4O3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJtIDQwLjgwMjA4MSw5MC40NTQ2MTQgMS45NTAxLC00LjM1MDIyMSIKICAgICAgIGlkPSJwYXRoMTEyMyIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDojMDAwMDAwO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoxLjEzMzg2O3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjAiCiAgICAgICBkPSJtIDE1NS4xNTc1MiwzMzIuMDc5OTMgdiAtNi4wNzkwNSBoIDIuNzQyODQgMi43NDI4MyBsIC0wLjI2MTQzLDAuNjE0MjEgYyAtMC41NDc1LDEuMjg2MyAtNS4wOTE1NiwxMS4zOTAxMyAtNS4xNTYyOSwxMS40NjUxNSAtMC4wMzc0LDAuMDQzMyAtMC4wNjc5LC0yLjY1NjgzIC0wLjA2NzksLTYuMDAwMzEgeiIKICAgICAgIGlkPSJwYXRoMTE5NCIKICAgICAgIHRyYW5zZm9ybT0ic2NhbGUoMC4yNjQ1ODMzMykiIC8+CiAgICA8dGV4dAogICAgICAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIKICAgICAgIHN0eWxlPSJmb250LXNpemU6My4xNzVweDtsaW5lLWhlaWdodDoxLjI1O2ZvbnQtZmFtaWx5OkFyaWFsOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246QXJpYWw7c3Ryb2tlLXdpZHRoOjAuMjY0NTgzIgogICAgICAgeD0iNDMuNzAyMjI5IgogICAgICAgeT0iODcuMTA0NDQ2IgogICAgICAgaWQ9InRleHQxMTk4Ij48dHNwYW4KICAgICAgICAgc29kaXBvZGk6cm9sZT0ibGluZSIKICAgICAgICAgaWQ9InRzcGFuMTE5NiIKICAgICAgICAgc3R5bGU9InN0cm9rZS13aWR0aDowLjI2NDU4MyIKICAgICAgICAgeD0iNDMuNzAyMjI5IgogICAgICAgICB5PSI4Ny4xMDQ0NDYiPlRhYmxlcm88L3RzcGFuPjx0c3BhbgogICAgICAgICBzb2RpcG9kaTpyb2xlPSJsaW5lIgogICAgICAgICBzdHlsZT0ic3Ryb2tlLXdpZHRoOjAuMjY0NTgzIgogICAgICAgICB4PSI0My43MDIyMjkiCiAgICAgICAgIHk9IjkxLjA3MzE5NiIKICAgICAgICAgaWQ9InRzcGFuMTIwMCI+cHJpbmNpcGFsPC90c3Bhbj48L3RleHQ+CiAgICA8cmVjdAogICAgICAgc3R5bGU9ImZpbGw6IzY0OTVlZDtmaWxsLW9wYWNpdHk6MTtzdHJva2U6IzY0OTVlZDtzdHJva2Utd2lkdGg6MC4zO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjAiCiAgICAgICBpZD0icmVjdDE5MjgtMSIKICAgICAgIHdpZHRoPSI2MS40MjE0MjkiCiAgICAgICBoZWlnaHQ9IjAuNjk5OTk5OTkiCiAgICAgICB4PSI1Ny42MTE0MjciCiAgICAgICB5PSI3Mi4xNTY3OTIiIC8+CiAgICA8dGV4dAogICAgICAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIKICAgICAgIHN0eWxlPSJmb250LXNpemU6My4xNzVweDtsaW5lLWhlaWdodDoxLjI1O2ZvbnQtZmFtaWx5OkFyaWFsOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246QXJpYWw7ZmlsbDojMjc2Y2RmO3N0cm9rZS13aWR0aDowLjI2NDU4MyIKICAgICAgIHg9Ijc2LjUxNzYxNiIKICAgICAgIHk9Ijc2LjI1NzAyNyIKICAgICAgIGlkPSJ0ZXh0MjY5MyI+PHRzcGFuCiAgICAgICAgIHNvZGlwb2RpOnJvbGU9ImxpbmUiCiAgICAgICAgIGlkPSJ0c3BhbjI2OTEiCiAgICAgICAgIHN0eWxlPSJmaWxsOiMyNzZjZGY7c3Ryb2tlLXdpZHRoOjAuMjY0NTgzIgogICAgICAgICB4PSI3Ni41MTc2MTYiCiAgICAgICAgIHk9Ijc2LjI1NzAyNyI+Q2ludGEgdHJhbnNwb3J0YWRvcmE8L3RzcGFuPjwvdGV4dD4KICAgIDxyZWN0CiAgICAgICBzdHlsZT0iZmlsbDpub25lO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDowLjM7c3Ryb2tlLWxpbmVjYXA6cm91bmQ7c3Ryb2tlLW1pdGVybGltaXQ6MCIKICAgICAgIGlkPSJyZWN0Mjc5NSIKICAgICAgIHdpZHRoPSI1LjIzMjg1NjgiCiAgICAgICBoZWlnaHQ9IjIuNTQ1NzE0MSIKICAgICAgIHg9Ijg0LjcxNTcxNCIKICAgICAgIHk9IjYwLjI0ODU2OSIgLz4KICAgIDxwYXRoCiAgICAgICBzdHlsZT0iZmlsbDojMDAwMDAwO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDowLjI2NDU4M3B4O3N0cm9rZS1saW5lY2FwOmJ1dHQ7c3Ryb2tlLWxpbmVqb2luOm1pdGVyO3N0cm9rZS1vcGFjaXR5OjEiCiAgICAgICBkPSJNIDg5Ljk4MTM2Niw2Mi43MDMxOTkgODQuNzgxMTAzLDYwLjE3Mzc4MSIKICAgICAgIGlkPSJwYXRoMjkxNCIKICAgICAgIHNvZGlwb2RpOm5vZGV0eXBlcz0iY2MiIC8+CiAgICA8cGF0aAogICAgICAgc3R5bGU9ImZpbGw6IzAwMDAwMDtmaWxsLW9wYWNpdHk6MTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MS4xMzM4NjtzdHJva2UtbGluZWNhcDpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDowIgogICAgICAgZD0ibSAzMzEuNDEwNTcsMjMyLjEyMTA0IC03LjY3NjA1LC0zLjc0MTc0IGggNy43ODAyMSA3Ljc4MDIxIHYgMy43NDE3NCBjIDAsMi4wNTc5NSAtMC4wNDY5LDMuNzQxNzMgLTAuMTA0MTUsMy43NDE3MyAtMC4wNTczLDAgLTMuNTU4MzgsLTEuNjgzNzggLTcuNzgwMjIsLTMuNzQxNzMgeiIKICAgICAgIGlkPSJwYXRoMzAyNCIKICAgICAgIHRyYW5zZm9ybT0ic2NhbGUoMC4yNjQ1ODMzMykiIC8+CiAgICA8cGF0aAogICAgICAgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MC4yNjQ1ODNweDtzdHJva2UtbGluZWNhcDpidXR0O3N0cm9rZS1saW5lam9pbjptaXRlcjtzdHJva2Utb3BhY2l0eToxIgogICAgICAgZD0iTSA0MS44MDIxMzEsODYuMDA0Mzg2IFYgNjEuNTAzMTM2IgogICAgICAgaWQ9InBhdGgzMDI2IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjAuMjY0NTgzcHg7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Ik0gNDEuODAyMTMxLDYxLjgwMzE1MiA4NC42MDQzMTcsNjEuNTAzMTM2IgogICAgICAgaWQ9InBhdGgzMDI4IiAvPgogICAgPHBhdGgKICAgICAgIHN0eWxlPSJmaWxsOm5vbmU7c3Ryb2tlOiMwMDAwMDA7c3Ryb2tlLXdpZHRoOjAuMjY0NTgzcHg7c3Ryb2tlLWxpbmVjYXA6YnV0dDtzdHJva2UtbGluZWpvaW46bWl0ZXI7c3Ryb2tlLW9wYWNpdHk6MSIKICAgICAgIGQ9Ik0gODUuNTI4OTI3LDYyLjc5NDI4NCBWIDY0LjEwMjUgSCA2MC4yNDg1NzIgViA2Ny4zMiBoIDAuMTQxNDI3IHYgMC4yODI4NTYiCiAgICAgICBpZD0icGF0aDMwMzYiIC8+CiAgICA8dGV4dAogICAgICAgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIKICAgICAgIHN0eWxlPSJmb250LXNpemU6My4xNzVweDtsaW5lLWhlaWdodDoxLjI1O2ZvbnQtZmFtaWx5OkFyaWFsOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246QXJpYWw7ZmlsbDojZjQ0MzM2O3N0cm9rZS13aWR0aDowLjI2NDU4MyIKICAgICAgIHg9IjQ1LjMyNzg1OCIKICAgICAgIHk9IjY1LjEyNzg2MSIKICAgICAgIGlkPSJ0ZXh0MzA0NCI+PHRzcGFuCiAgICAgICAgIHNvZGlwb2RpOnJvbGU9ImxpbmUiCiAgICAgICAgIGlkPSJ0c3BhbjMwNDIiCiAgICAgICAgIHN0eWxlPSJmaWxsOiNmNDQzMzY7c3Ryb2tlLXdpZHRoOjAuMjY0NTgzIgogICAgICAgICB4PSI0NS4zMjc4NTgiCiAgICAgICAgIHk9IjY1LjEyNzg2MSI+QTwvdHNwYW4+PC90ZXh0PgogICAgPHRleHQKICAgICAgIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgICAgICBzdHlsZT0iZm9udC1zaXplOjIuODIyMjJweDtsaW5lLWhlaWdodDoxLjI1O2ZvbnQtZmFtaWx5OkFyaWFsOy1pbmtzY2FwZS1mb250LXNwZWNpZmljYXRpb246QXJpYWw7c3Ryb2tlLXdpZHRoOjAuMjY0NTgzIgogICAgICAgeD0iNzAuNzE0Mjg3IgogICAgICAgeT0iNjYuNTQyMTQ1IgogICAgICAgaWQ9InRleHQzMDQ4Ij48dHNwYW4KICAgICAgICAgc29kaXBvZGk6cm9sZT0ibGluZSIKICAgICAgICAgaWQ9InRzcGFuMzA0NiIKICAgICAgICAgc3R5bGU9ImZvbnQtc2l6ZToyLjgyMjIycHg7ZmlsbDojZjQ0MzM2O3N0cm9rZS13aWR0aDowLjI2NDU4MyIKICAgICAgICAgeD0iNzAuNzE0Mjg3IgogICAgICAgICB5PSI2Ni41NDIxNDUiPkI8L3RzcGFuPjwvdGV4dD4KICAgIDx0ZXh0CiAgICAgICB4bWw6c3BhY2U9InByZXNlcnZlIgogICAgICAgc3R5bGU9ImZvbnQtc2l6ZTozLjE3NXB4O2xpbmUtaGVpZ2h0OjEuMjU7Zm9udC1mYW1pbHk6QXJpYWw7LWlua3NjYXBlLWZvbnQtc3BlY2lmaWNhdGlvbjpBcmlhbDtzdHJva2Utd2lkdGg6MC4yNjQ1ODMiCiAgICAgICB4PSI3Mi44MzU3MDkiCiAgICAgICB5PSI1OC42OTI4NiIKICAgICAgIGlkPSJ0ZXh0MzA2MCI+PHRzcGFuCiAgICAgICAgIHNvZGlwb2RpOnJvbGU9ImxpbmUiCiAgICAgICAgIGlkPSJ0c3BhbjMwNTgiCiAgICAgICAgIHN0eWxlPSJzdHJva2Utd2lkdGg6MC4yNjQ1ODMiCiAgICAgICAgIHg9IjcyLjgzNTcwOSIKICAgICAgICAgeT0iNTguNjkyODYiPlRhYmxlcm8gcGFyYSBsYSBtw6FxdWluYTwvdHNwYW4+PC90ZXh0PgogICAgPGNpcmNsZQogICAgICAgc3R5bGU9ImZpbGw6bm9uZTtzdHJva2U6IzAwMDAwMDtzdHJva2Utd2lkdGg6MC4zO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1taXRlcmxpbWl0OjAiCiAgICAgICBpZD0icGF0aDU2NiIKICAgICAgIGN4PSI2MC4xOTc3NTQiCiAgICAgICBjeT0iNjkuNjk0NDEyIgogICAgICAgcj0iMi4yNjI4NTcyIiAvPgogICAgPHRleHQKICAgICAgIHhtbDpzcGFjZT0icHJlc2VydmUiCiAgICAgICBzdHlsZT0iZm9udC1zaXplOjMuMTc1cHg7bGluZS1oZWlnaHQ6MS4yNTtmb250LWZhbWlseTpBcmlhbDstaW5rc2NhcGUtZm9udC1zcGVjaWZpY2F0aW9uOkFyaWFsO3N0cm9rZS13aWR0aDowLjI2NDU4MyIKICAgICAgIHg9IjU4LjkyNDg5NiIKICAgICAgIHk9IjcwLjc4OTI5MSIKICAgICAgIGlkPSJ0ZXh0NjIyIj48dHNwYW4KICAgICAgICAgc29kaXBvZGk6cm9sZT0ibGluZSIKICAgICAgICAgaWQ9InRzcGFuNjIwIgogICAgICAgICBzdHlsZT0iZm9udC1zaXplOjMuMTc1cHg7c3Ryb2tlLXdpZHRoOjAuMjY0NTgzIgogICAgICAgICB4PSI1OC45MjQ4OTYiCiAgICAgICAgIHk9IjcwLjc4OTI5MSI+TTwvdHNwYW4+PC90ZXh0PgogIDwvZz4KPC9zdmc+Cg==" width="500" /></p>
+</div>
+<details>
+<summary>
+Tema A
+</summary>
+<p><strong>Referidos al esquema físico:</strong></p>
+<ul>
+<li><strong>A = 60 metros</strong></li>
+<li><strong>B = 18 metros</strong></li>
+</ul>
+<p><strong>Placa del motor:</strong></p>
+<ul>
+<li>Potencia: 5 kW</li>
+<li>Tensión nominal: 220 V Δ / 380 V Υ <span hidden>* Corriente
+nominal: 9,6 A / 5,5 A</span></li>
+<li>Frecuencia: 50 Hz</li>
+<li>Factor de potencia: 0,85</li>
+<li>Eficiencia: 88 %</li>
+<li>Velocidad: 1440 rpm</li>
+<li>Aislamiento: Clase F</li>
+<li>Tipo: Trifásico, asíncrono, jaula de ardilla</li>
+</ul>
+<p><strong>Red eléctrica:</strong></p>
+<ul>
+<li>50 Hz</li>
+<li>220/380 V como valores nominales</li>
+</ul>
+</details>
+<details>
+<summary>
+Tema B
+</summary>
+<p><strong>Referidos al esquema físico:</strong></p>
+<ul>
+<li><strong>A = 45 metros</strong></li>
+<li><strong>B = 25 metros</strong></li>
+</ul>
+<p><strong>Placa del motor:</strong></p>
+<ul>
+<li>Potencia: 7,5 kW</li>
+<li>Tensión nominal: 220 V Δ / 380 V Υ <span hidden>* Corriente
+nominal: 14,5 A / 8,4 A</span></li>
+<li>Frecuencia: 50 Hz</li>
+<li>Factor de potencia: 0,87</li>
+<li>Eficiencia: 89 %</li>
+<li>Velocidad: 1450 rpm</li>
+<li>Aislamiento: Clase F</li>
+<li>Tipo: Trifásico, asíncrono, jaula de ardilla</li>
+</ul>
+<p><strong>Red eléctrica:</strong></p>
+<ul>
+<li>50 Hz</li>
+<li>220/380 V como valores nominales</li>
+</ul>
+</details>
+<details>
+<summary>
+Tema C
+</summary>
+<p><strong>Referidos al esquema físico:</strong></p>
+<ul>
+<li><strong>A = 65 metros</strong></li>
+<li><strong>B = 20 metros</strong></li>
+</ul>
+<p><strong>Placa del motor:</strong></p>
+<ul>
+<li>Potencia: 10 kW</li>
+<li>Tensión nominal: 220 V Δ / 380 V Υ <span hidden>* Corriente
+nominal: 18,2 A / 10,5 A</span></li>
+<li>Frecuencia: 50 Hz</li>
+<li>Factor de potencia: 0,88</li>
+<li>Eficiencia: 90 %</li>
+<li>Velocidad: 1460 rpm</li>
+<li>Aislamiento: Clase F</li>
+<li>Tipo: Trifásico, asíncrono, jaula de ardilla</li>
+</ul>
+<p><strong>Red eléctrica:</strong></p>
+<ul>
+<li>50 Hz</li>
+<li>220/380 V como valores nominales</li>
+</ul>
+</details>
+<details>
+<summary>
+Tema D
+</summary>
+<p><strong>Referidos al esquema físico:</strong></p>
+<ul>
+<li><strong>A = 50 metros</strong></li>
+<li><strong>B = 15 metros</strong></li>
+</ul>
+<p><strong>Placa del motor:</strong></p>
+<ul>
+<li>Potencia: 5,5 kW</li>
+<li>Tensión nominal: 220 V Δ / 380 V Υ <span hidden>* Corriente
+nominal: 13,8 A / 8,0 A</span></li>
+<li>Frecuencia: 50 Hz</li>
+<li>Factor de potencia: 0,84</li>
+<li>Eficiencia: 87 %</li>
+<li>Velocidad: 1420 rpm</li>
+<li>Aislamiento: Clase F</li>
+<li>Tipo: Trifásico, asíncrono, jaula de ardilla</li>
+</ul>
+<p><strong>Red eléctrica:</strong></p>
+<ul>
+<li>50 Hz</li>
+<li>220/380 V como valores nominales</li>
+</ul>
+</details>
+<details>
+<summary>
+Tema E
+</summary>
+<p><strong>Referidos al esquema físico:</strong></p>
+<ul>
+<li><strong>A = 40 metros</strong></li>
+<li><strong>B = 22 metros</strong></li>
+</ul>
+<p><strong>Placa del motor:</strong></p>
+<ul>
+<li>Potencia: 8 kW</li>
+<li>Tensión nominal: 220 V Δ / 380 V Υ <span hidden>* Corriente
+nominal: 15,3 A / 8,8 A</span></li>
+<li>Frecuencia: 50 Hz</li>
+<li>Factor de potencia: 0,86</li>
+<li>Eficiencia: 89 %</li>
+<li>Velocidad: 1440 rpm</li>
+<li>Aislamiento: Clase F</li>
+<li>Tipo: Trifásico, asíncrono, jaula de ardilla</li>
+</ul>
+<p><strong>Red eléctrica:</strong></p>
+<ul>
+<li>50 Hz</li>
+<li>220/380 V como valores nominales</li>
+</ul>
+</details>
+<h3 id="actividad">Actividad</h3>
+<div class="activity">
+<p><strong>a)</strong> Pide al profesor que te asigne un tema.</p>
+<p><strong>b)</strong> Empieza a construir la <strong>memoria
+descriptiva</strong> del proyecto. Inicia esta con el título
+correspondiente y un croquis del esquema físico según el tema que te
+tocó.</p>
+</div>
+<h2 id="definición-de-la-máquina-y-condiciones-de-servicio-entorno">2.
+Definición de la Máquina y Condiciones de Servicio (Entorno)</h2>
+<p>Imagina y elige el uso que tendrá la cinta transportadora teniendo en
+cuenta:</p>
+<ul>
+<li>Tipo de material transportado y modo de trabajo (operación continua,
+arranques frecuentes, etc.).</li>
+<li>Influencias externas y entorno: Definición clara de las condiciones
+ambientales de trabajo (presencia de polvo, humedad, ambientes
+corrosivos o riesgos de incendio/explosión).</li>
+</ul>
+<div class="activity">
+<p>Agrega a la memoria descriptiva este subtítulo y detalla el uso que
+pensaste para la cinta.</p>
+</div>
+<h2 id="selección-y-justificación-del-tipo-de-arranque">3. Selección y
+Justificación del Tipo de Arranque</h2>
+<p>De acuerdo con el punto anterior selecciona el método de arranque del
+motor. Existen varios tipos: Directo/DOL, Estrella-Triángulo, Arrancador
+suave/Soft-starter o Variador de frecuencia/VFD.</p>
+<div class="activity">
+<p>En la memoria descriptiva agrega este título y escribe una
+justificación técnica del método que elegiste. Este debe tener en cuenta
+también: los picos de corriente admisible en la red y las exigencias de
+torque mecánico/suavidad que requiere la cinta transportadora.</p>
+</div>
+<blockquote>
+<p>Para aprobar esta etapa se presenta en papel esta parte de la memoria
+descriptiva, ordenada y prolijo. Se explica además oralmente lo
+escrito.</p>
+</blockquote>
+<!-- *** GUIDE END *** -->
+<!-- *** GUIDE AUXILIARY THINGS *** -->
+<!--
+
+● Sections: example, activity. solutions, figure, warning, note
+
+::: example
+### Ejemplo: Cálculo de derivadas
+Aquí va el contenido de tu ejemplo. Puedes usar Markdown normal adentro.
+:::
+
+
+● Image:
+
+::: figure
+![](imagen.png){width=400px}
+
+<small>Pie (Source)</small>
+:::
+
+[⌕](../../images/ ) 
+
+● Videos:
+
+ Change XXX to video-id and put time in seconds
+
+ - Yotube with start point: [Mira este momento clave en el video](https://www.youtube.com/watch?v=XXX&t=123s)
+
+ - Youtubetrimmer with start and end point: [Mirá este momento puntual del video](https://youtubetrimmer.com/view/?v=XXX&start=120&end=150&loop=0)
+
+-->
+</body>
+</html>
