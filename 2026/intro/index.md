@@ -16,9 +16,9 @@ version: "20/05/26"
 
 - [Lección](04-lesson-economy.html)
 - [Actividad grupal](04-assignment-economy.html) <span class = "grey3 size80"> (1 pto)</span>
-- [Quiz]() <span class = "grey3 size80"> (1 pto)</span>
+- [Quiz](04-quiz-economy.html) <span class = "grey3 size80"> (1 pto)</span>
 
-#### TP Especial
+#### TP Especial||
 
 &emsp;<span class = "grey3 size80">**Requisito:** para poder hacer este trabajo es sumar como mínimo 3.65 puntos en las actividades.</span>
 <br>&emsp;[Consigna](05-tp-spec.html) <span class = "grey3 size80"> (2 ptos)</span>
