@@ -47,17 +47,16 @@ vertical-align: middle;
 <!-- *** GUIDE START *** -->
 <h2 id="cálculo-de-la-corriente-de-proyecto">1. Cálculo de la corriente
 de proyecto</h2>
-<p>La **corriente de proyecto <span class="math inline">I_B</span> es el
-valor de intensidad de corriente que se utiliza para dimensionar las
-secciones de los cables y seleccionar los calibres de las protecciones
-del circuito.</p>
+<p>La corriente de proyecto <span class="math inline">I_B</span> es el
+valor de corriente que se utiliza para dimensionar las secciones de los
+cables y seleccionar los calibres de las protecciones del circuito.</p>
 <p>Para el caso específico de un <strong>motor eléctrico
 trifásico</strong>, la reglamentación <strong>AEA 90364-7-771</strong>
-establece una metodología precisa de cálculo que se divide en dos
-pasos:</p>
+establece una metodología precisa de cálculo que se divide en dos pasos
+como se pide en la actividad de abajo.</p>
 <h3 id="actividad">Actividad</h3>
-<p>Desarrollar esto en la carpeta de modo prolijo.</p>
 <div class="activity">
+<p>Desarrollar esto en la carpeta de modo prolijo.</p>
 <p><strong>a)</strong> Cálcular la Corriente Nominal del Motor <span class="math inline">I_n</span></p>
 <p>Antes de aplicar los factores de proyecto, se debe determinar la
 <strong>corriente nominal de línea</strong> que consumirá el motor a
@@ -70,21 +69,19 @@ datos que cada uno tiene):</p>
 <li>Rendimiento o eficiencia <span class="math inline">\eta</span></li>
 </ul>
 <p><strong>Sugerencia:</strong> Convertir potencia mecánica a potencia
-eléctrica consumida (Potencia activa). Luego calcular la corriente
+eléctrica consumida (Potencia activa) usando <span class="math inline">\eta</span>. Luego calcular la corriente
 nominal.</p>
 <div hidden>
 <p>Para un sistema trifásico equilibrado, la corriente nominal de línea
 se calcula mediante la fórmula: <span class="math inline">I_n =
 \frac{P_{el}}{\sqrt{3} \cdot U \cdot \cos\phi}</span></p>
 </div>
-<p>div&gt;</p>
 <p><strong>b)</strong> Determinar la Corriente de Proyecto <span class="math inline">I_B</span> según AEA 90364</p>
 <p>Esta corriente se calcula para dimensionar los conductores. En el
-Anexo 771-H hay una tabla resumen muy útil para hacer cálculos de diseño
-pero no toca el caso de los motores. Hay que ir a la sección 771.16 que
-trata sobre el dimensionaniento de la sección de los condutores para
-encontrar como es el caso de los motores. Fijarse en concreto al final
-de la 771.16.</p>
+Anexo 771-H hay una tabla muy útil que muestra el proceso de diseño paso
+a paso. Pero no toca el caso de los motores. Para resolver este caso hay
+que ir a la sección 771.16 que trata sobre el dimensionaniento de la
+sección de los condutores. En concreto al final de la 771.16.</p>
 <p><strong>Aclaración:</strong> La corriente de proyecto no es una
 corriente física instantánea, sino un <strong>valor de diseño estipulado
 por norma</strong> para para garantizar un <strong>margen térmico de
@@ -113,20 +110,23 @@ explícitamente que nunca será inferior a 1.</li>
 </ol>
 </div>
 </div>
-<h2 id="elegir-la-sección-del-conductor-y-verificarla">2. Elegir la
-sección del conductor y verificarla</h2>
-<p>En la tabla resumen en el Anexo 771-H se puede seguir paso a paso
-ésto. La norma pide aplicar factores de corrección (método de
-instalación, temperatura ambiente, agrupamiento de cables, tipo de
-aislamiento). Y luego elegir la sección cuyo <strong>Iz (intensidad
-admisible)</strong> ≥ corriente calculada de proyecto y además esté
-corregida por los diversos factores.</p>
+<h2 id="elegir-el-conductor">2. Elegir el conductor</h2>
+<p>La segunda fila de la tabla resumen del Anexo 771-H llamada “Elección
+del conductor a partir de su corriente máxima <span class="math inline">Iz</span>” manda consultar la cláusula 771.19.3. El
+proceso pide aplicar factores de corrección (método de instalación,
+temperatura ambiente, agrupamiento de cables, tipo de aislamiento). Y
+luego elegir la sección cuyo “<span class="math inline">I_z</span>
+(intensidad admisible) ≥ <span class="math inline">I_B</span> (corriente
+de proyecto)” y además esté corregida por los diversos factores. Abajo
+verás como puedes completar esta actividad.</p>
 <h3 id="actividad-1">Actividad</h3>
 <div class="activity">
-<p>Resolver este tema del siguiente modo:</p>
-<p><strong>a)</strong> Vamos a simplificar este proceso adoptando los
-valores que se muestran abajo y que están basados en la experiencia
-industrial:</p>
+<p>Puedes elegir cualquiera de estos dos caminos.</p>
+<p><strong>a)</strong> Hacer todo el proceso de selección siguiendo paso
+a paso la norma llegando a la sección del cable y al <span class="math inline">I_z</span>.</p>
+<p><strong>b)</strong> Si la aplicación de tu cinta transportadora no lo
+impide puedes usar directamente estos valores que se muestran abajo y
+que están basados en la experiencia industrial:</p>
 <ul>
 <li>Usar <strong>cable flexible de cobre, aislación PVC o XLPE, 0,6/1
 kV</strong>.</li>
@@ -134,13 +134,10 @@ kV</strong>.</li>
 <li>Para motores 5–10 kW elegir la sección <strong>3×2,5 mm²</strong> y
 verificar la caída de tensión. Si no verifica elegir <strong>3×4
 mm²</strong> y verificar nuevamente. Esto uele ser suficiente.</li>
+<li><span class="math inline">I_z</span>: para sección de <strong>2,5
+mm²</strong> tomar <span class="math inline">I_z=29A</span> y para
+<strong>4 mm²</strong> tomar <span class="math inline">Iz=38A</span></li>
 </ul>
-<p><strong>b)</strong> Verificar la <strong>caída de tensión</strong>
-(si excede el máximo admisible aumentás la sección). Seguir
-procedimiento según Tabla 771-H.</p>
-<p><strong>c)</strong> Verificar solicitaciones térmicas/cortocircuito
-(la sección debe soportar la energía durante cortocircuitos). Seguir
-procedimiento según tabla 771-H.</p>
 </div>
 <blockquote>
 <p>Para aprobar esta etapa se presenta en papel esta parte de la memoria
