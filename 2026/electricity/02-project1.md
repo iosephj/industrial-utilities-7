@@ -1,22 +1,25 @@
 ---
-title: "Instalación de un motor trifásico para una cinta transportadora"
+title: "Proyecto - Etapa 1: Introducción general"
 autor: "José Juarez"
 version: "16/09/26"
 ---
 
 <!-- *** GUIDE START *** -->
 
+## Instalación de un motor trifásico para una cinta transportadora
 
 ::: figure
 ![](https://mecaluxar.cdnwm.com/blog/img/cinta-transportadora-industrial-preparacion-pedidos.1.0.jpg?imdensity=1&imwidth=1024){width=400px}
 :::
 
+En este proyecto diseñaremos la instalación eléctrica para una cinta transportadora de uso industrial. Dejaremos de lado, por complejidad y tiempo, el diseño de una instalación completa de una industria y nos concentraremos solo en la cinta.
 
-## 1. Introducción
+Está separado por etapas y cada etapa tiene una guía orientativa para desarrollarla según la normativa.
 
-Una fábrica quiere alimentar un **motor trifásico** que mueve una cinta transportadora.
+Las cintas transportadoras pueden tener usos muy diversos, pueden llevar materiales por varios kilómetros al aire libre, pueden mover productos de un sector a otro dentro de una planta, etc.
 
-El proyecto consiste en diseñar progresivamente la instalación eléctrica necesaria para alimentar y proteger este motor, tomando decisiones técnicas y justificándolas a partir de la reglamentación correspondiente.
+En este caso concreto cada uno elegirá una aplicación específica que sea congruente con los datos de motor que recibe y diseñará progresivamente la instalación.
+
 
 ### Norma de referencia
 
@@ -28,22 +31,12 @@ Esta sección contiene requisitos y criterios para el diseño de instalaciones e
 
 La norma será el documento principal de consulta durante el proyecto. Más adelante deberán aprender a localizar en ella la información necesaria para justificar sus decisiones.
 
-**No es necesario leer toda la norma de principio a fin.** En cada etapa del proyecto se indicará qué aspecto de la instalación deben resolver y qué información deberán buscar.
+[Aquí](aea_90364_7_771.pdf) puedes consultar un archivo de la norma.
 
-## 2. Esquema físico
 
-La instalación estará formada inicialmente por dos tramos:
+### Actividad: Conocimientos previos
 
-* **Tramo A:** desde el tablero principal de la fábrica hasta el tablero de la máquina.
-* **Tramo B:** desde el tablero de la máquina hasta el motor.
-
-::: figure
-![](../../images/electricity/project_scheme_1motor.svg){width=500px}
-:::
-
-Los valores de las distancias **A** y **B**, junto con las características del motor y otros datos necesarios, se proporcionarán progresivamente durante el proyecto.
-
-## 3. Conocimientos previos
+::: activity
 
 Antes de comenzar con el diseño de la instalación, prepará una explicación breve de los siguientes temas.
 
@@ -54,8 +47,11 @@ Lo importante no es escribir un texto extenso, sino **comprenderlos y poder expl
 * Explicar qué representa el **rendimiento η** que aparece en la placa de un motor.
 * Explicar qué es el **factor de servicio** de un motor.
 
-Una vez comprendidos estos conceptos y realizada la exposición, comenzaremos con el diseño de la instalación.
+::: 
 
+::: warning
+Para pasar a la siguiente etapa debes explicar estos temas al profesor y responder las preguntas que te haga.
+:::
 
 <!-- *** GUIDE END *** -->
 

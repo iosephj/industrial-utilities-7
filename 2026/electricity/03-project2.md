@@ -1,21 +1,27 @@
 ---
-title: "Proyecto - Etapa 2"
+title: "Proyecto - Etapa 2: Definición de la cinta y del arranque"
 autor: "José Juarez"
 version: "30/09/26"
 ---
 
 <!-- *** GUIDE START *** -->
 
-## Datos Iniciales y Esquema Físico de la Instalación
+## 1. Datos Iniciales y Esquema Físico de la Instalación
 
-### 1. Esquema físico
+### Esquema físico
+
+Este esquema es igual para todos pero en cada tema las longitudes A y b son distintas. 
 
 ::: figure
 ![](../../images/electricity/project_scheme_1motor.svg){width=500px}
 :::
 
+### Temas
+
+Cada tema tiene datos distintos no solo para las longitudes sino para el motor que mueve la cinta.
+
 <details>
-<summary>Tema A</summary>
+<summary> Tema A</summary>
 
 **Referidos al esquema físico:**
 
@@ -42,7 +48,7 @@ version: "30/09/26"
 </details>
 
 <details>
-<summary>Tema B</summary>
+<summary> Tema B</summary>
 
 **Referidos al esquema físico:**
 
@@ -68,8 +74,9 @@ version: "30/09/26"
 
 </details>
 
+
 <details>
-<summary>Tema C</summary>
+<summary> Tema C</summary>
 
 **Referidos al esquema físico:**
 
@@ -96,7 +103,7 @@ version: "30/09/26"
 </details>
 
 <details>
-<summary>Tema D</summary>
+<summary> Tema D</summary>
 
 **Referidos al esquema físico:**
 
@@ -123,7 +130,7 @@ version: "30/09/26"
 </details>
 
 <details>
-<summary>Tema E</summary>
+<summary> Tema E</summary>
 
 **Referidos al esquema físico:**
 
@@ -153,17 +160,18 @@ version: "30/09/26"
 
 ::: activity
 
-**a)** Pide al profesor que te asigne un tema.
+Pide al profesor que te asigne un tema. Luego empieza a desarrollar la **memoria descriptiva** del proyecto con el título correspondiente y un croquis del esquema físico según el tema que te tocó.
 
-**b)** Empieza a construir la **memoria descriptiva** del proyecto. Inicia esta con el título correspondiente y un croquis del esquema físico según el tema que te tocó.
 :::
 
-## 2. Definición de la Máquina y Condiciones de Servicio (Entorno)
+## 2. Definición de la Máquina y Condiciones de Servicio
 
-Imagina y elige el uso que tendrá la cinta transportadora teniendo en cuenta:
+Investiga, imagina y elige el uso que tendrá la cinta transportadora teniendo en cuenta:
 
 - Tipo de material transportado y modo de trabajo (operación continua, arranques frecuentes, etc.).
 - Influencias externas y entorno: Definición clara de las condiciones ambientales de trabajo (presencia de polvo, humedad, ambientes corrosivos o riesgos de incendio/explosión).
+
+### Actividad
 
 ::: activity
 
@@ -174,7 +182,9 @@ Agrega a la memoria descriptiva este subtítulo y detalla el uso que pensaste pa
 
 ## 3. Selección y Justificación del Tipo de Arranque
 
-De acuerdo con el punto anterior selecciona el método de arranque del motor. Existen varios tipos: Directo/DOL, Estrella-Triángulo, Arrancador suave/Soft-starter o Variador de frecuencia/VFD.
+De acuerdo con el punto anterior selecciona el método de arranque del motor. Existen varios tipos: Directo/DOL, Estrella-Triángulo, Arrancador suave/Soft-starter y con Variador de frecuencia/VFD.
+
+### Actividad
 
 ::: activity
 
@@ -182,8 +192,9 @@ En la memoria descriptiva agrega este título y escribe una justificación técn
 
 :::
 
-> Para aprobar esta etapa se presenta en papel esta parte de la memoria descriptiva, ordenada y prolijo. Se explica además oralmente lo escrito.
-
+::: warning
+Para aprobar esta etapa se presenta en papel esta parte de la memoria descriptiva, ordenada y prolija. Se explica además oralmente lo escrito.
+:::
 
 <!-- *** GUIDE END *** -->
 

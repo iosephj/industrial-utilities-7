@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Proyecto - Etapa 3</title>
+  <title>Proyecto - Etapa 3: Corriente de proyecto y dimensionamiento del conductor</title>
   <style>
 
 code{white-space: pre-wrap;}
@@ -42,7 +42,8 @@ vertical-align: middle;
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Proyecto - Etapa 3</h1>
+<h1 class="title">Proyecto - Etapa 3: Corriente de proyecto y
+dimensionamiento del conductor</h1>
 </header>
 <!-- *** GUIDE START *** -->
 <h2 id="cálculo-de-la-corriente-de-proyecto">1. Cálculo de la corriente
@@ -56,7 +57,6 @@ establece una metodología precisa de cálculo que se divide en dos pasos
 como se pide en la actividad de abajo.</p>
 <h3 id="actividad">Actividad</h3>
 <div class="activity">
-<p>Desarrollar esto en la carpeta de modo prolijo.</p>
 <p><strong>a)</strong> Cálcular la Corriente Nominal del Motor <span class="math inline">I_n</span></p>
 <p>Antes de aplicar los factores de proyecto, se debe determinar la
 <strong>corriente nominal de línea</strong> que consumirá el motor a
@@ -77,11 +77,13 @@ se calcula mediante la fórmula: <span class="math inline">I_n =
 \frac{P_{el}}{\sqrt{3} \cdot U \cdot \cos\phi}</span></p>
 </div>
 <p><strong>b)</strong> Determinar la Corriente de Proyecto <span class="math inline">I_B</span> según AEA 90364</p>
-<p>Esta corriente se calcula para dimensionar los conductores. En el
-Anexo 771-H hay una tabla muy útil que muestra el proceso de diseño paso
-a paso. Pero no toca el caso de los motores. Para resolver este caso hay
-que ir a la sección 771.16 que trata sobre el dimensionaniento de la
-sección de los condutores. En concreto al final de la 771.16.</p>
+<p>Esta corriente se calcula para dimensionar los conductores. El Anexo
+771-H empieza con una tabla resumen que muestra el proceso para
+determinar la sección de los conductors. Pero en el primer paso, cuando
+hay que determinar <span class="math inline">I_B</span>, no lo aborda
+para el caso de motores. Para resolver este caso hay que ir a la sección
+771.16 que trata sobre el dimensionaniento de la sección de los
+condutores. En concreto al final de la 771.16.</p>
 <p><strong>Aclaración:</strong> La corriente de proyecto no es una
 corriente física instantánea, sino un <strong>valor de diseño estipulado
 por norma</strong> para para garantizar un <strong>margen térmico de
@@ -110,15 +112,25 @@ explícitamente que nunca será inferior a 1.</li>
 </ol>
 </div>
 </div>
-<h2 id="elegir-el-conductor">2. Elegir el conductor</h2>
-<p>La segunda fila de la tabla resumen del Anexo 771-H llamada “Elección
-del conductor a partir de su corriente máxima <span class="math inline">Iz</span>” manda consultar la cláusula 771.19.3. El
-proceso pide aplicar factores de corrección (método de instalación,
-temperatura ambiente, agrupamiento de cables, tipo de aislamiento). Y
-luego elegir la sección cuyo “<span class="math inline">I_z</span>
-(intensidad admisible) ≥ <span class="math inline">I_B</span> (corriente
-de proyecto)” y además esté corregida por los diversos factores. Abajo
-verás como puedes completar esta actividad.</p>
+<h2 id="dimensionamiento-del-conductor-por-capacidad-de-corriente-i_z">2.
+Dimensionamiento del conductor por capacidad de corriente <span class="math inline">I_z</span></h2>
+<p>Se trata de seleccionar la sección nominal del conductor (<span class="math inline">S</span>) asegurando que su capacidad máxima de
+corriente corregida (<span class="math inline">I_Z</span>) sea mayor o
+igual a la corriente de proyecto: <span class="math inline">I_Z \ge
+I_B</span>.</p>
+<p>La norma nombra a la (<span class="math inline">I_Z</span>) como la
+corriente máxima admisible del conductor.</p>
+<p>Para desarrollar esto el segundo paso de la tabla resumen del Anexo
+771-H manda consultar la cláusula 771.19.3. El proceso consiste en
+aplicar factores de corrección por método de instalación, temperatura
+ambiente, agrupamiento de cables, tipo de aislamiento, etc. Y luego
+elegir la sección cuyo “<span class="math inline">I_z</span> (intensidad
+admisible) ≥ <span class="math inline">I_B</span> (corriente de
+proyecto)”. Abajo verás como puedes completar esta actividad.</p>
+<p><span hidden> SUGERENCIA: En 2027 hacer una explicación de este
+proceso para que cada uno llegue a un valor teniendo en cuenta el uso de
+la cinta. De este modo ellos hacen el proceso y no asumen directamente
+los valores que se ponen en el punto b) de la actividad</span></p>
 <h3 id="actividad-1">Actividad</h3>
 <div class="activity">
 <p>Puedes elegir cualquiera de estos dos caminos.</p>
@@ -131,19 +143,19 @@ que están basados en la experiencia industrial:</p>
 <li>Usar <strong>cable flexible de cobre, aislación PVC o XLPE, 0,6/1
 kV</strong>.</li>
 <li>Tendido <strong>en bandeja</strong>.</li>
-<li>Para motores 5–10 kW elegir la sección <strong>3×2,5 mm²</strong> y
-verificar la caída de tensión. Si no verifica elegir <strong>3×4
-mm²</strong> y verificar nuevamente. Esto uele ser suficiente.</li>
+<li>Para motores 5–10 kW elegir la sección <strong>3×2,5 mm²</strong>. A
+la hora de verificar la caída de tensión, si no la verifica elegir
+<strong>3×4 mm²</strong> y verificar nuevamente.</li>
 <li><span class="math inline">I_z</span>: para sección de <strong>2,5
 mm²</strong> tomar <span class="math inline">I_z=29A</span> y para
 <strong>4 mm²</strong> tomar <span class="math inline">Iz=38A</span></li>
 </ul>
 </div>
-<blockquote>
+<div class="warning">
 <p>Para aprobar esta etapa se presenta en papel esta parte de la memoria
-descriptiva, ordenada y prolijo. Se explica además oralmente lo
+descriptiva, ordenada y prolija. Se explica además oralmente lo
 escrito.</p>
-</blockquote>
+</div>
 <!-- *** GUIDE END *** -->
 <!-- *** GUIDE AUXILIARY THINGS *** -->
 <!--

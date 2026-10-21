@@ -1,5 +1,5 @@
 ---
-title: "Proyecto - Etapa 3"
+title: "Proyecto - Etapa 3: Corriente de proyecto y dimensionamiento del conductor"
 autor: "José Juarez"
 version: "06/10/26"
 ---
@@ -16,8 +16,6 @@ Para el caso específico de un **motor eléctrico trifásico**, la reglamentaci�
 ### Actividad
 
 ::: activity
-
-Desarrollar esto en la carpeta de modo prolijo.
 
 **a)** Cálcular la Corriente Nominal del Motor $I_n$
 
@@ -37,7 +35,7 @@ Antes de aplicar los factores de proyecto, se debe determinar la **corriente nom
 
 **b)** Determinar la Corriente de Proyecto $I_B$ según AEA 90364
 
-Esta corriente se calcula para dimensionar los conductores. En el Anexo 771-H hay una tabla muy útil que muestra el proceso de diseño paso a paso. Pero no toca el caso de los motores. Para resolver este caso hay que ir a la sección 771.16 que trata sobre el dimensionaniento de la sección de los condutores. En concreto al final de la 771.16.
+Esta corriente se calcula para dimensionar los conductores. El Anexo 771-H empieza con una tabla resumen que muestra el proceso para determinar la sección de los conductors. Pero en el primer paso, cuando hay que determinar $I_B$, no lo aborda para el caso de motores. Para resolver este caso hay que ir a la sección 771.16 que trata sobre el dimensionaniento de la sección de los condutores. En concreto al final de la 771.16.
 
 **Aclaración:** La corriente de proyecto no es una corriente física instantánea, sino un **valor de diseño estipulado por norma** para para garantizar un **margen térmico de seguridad** en el cable. Así se evita que los arranques repetitivos o las ligeras sobrecargas mecánicas de la cinta transportadora envejezcan prematuramente la aislación del conductor.
 
@@ -53,9 +51,15 @@ Según la subcláusula **771.16.2.5**, cuando se dimensionan los conductores o c
 
 :::
 
-## 2. Elegir el conductor
+## 2. Dimensionamiento del conductor por capacidad de corriente $I_z$
 
-La segunda fila de la tabla resumen del Anexo 771-H llamada "Elección del conductor a partir de su corriente máxima $Iz$" manda consultar la cláusula 771.19.3. El proceso pide aplicar factores de corrección (método de instalación, temperatura ambiente, agrupamiento de cables, tipo de aislamiento). Y luego elegir la sección cuyo "$I_z$ (intensidad admisible) ≥ $I_B$ (corriente de proyecto)" y además esté corregida por los diversos factores. Abajo verás como puedes completar esta actividad.
+Se trata de seleccionar la sección nominal del conductor ($S$) asegurando que su capacidad máxima de corriente corregida ($I_Z$) sea mayor o igual a la corriente de proyecto: $I_Z \ge I_B$.
+
+La norma nombra a la ($I_Z$) como la corriente máxima admisible del conductor.
+
+Para desarrollar esto el segundo paso de la tabla resumen del Anexo 771-H manda consultar la cláusula 771.19.3. El proceso consiste en aplicar factores de corrección por método de instalación, temperatura ambiente, agrupamiento de cables, tipo de aislamiento, etc. Y luego elegir la sección cuyo "$I_z$ (intensidad admisible) ≥ $I_B$ (corriente de proyecto)". Abajo verás como puedes completar esta actividad.
+
+<span hidden> SUGERENCIA: En 2027 hacer una explicación de este proceso para que cada uno llegue a un valor teniendo en cuenta el uso de la cinta. De este modo ellos hacen el proceso y no asumen directamente los valores que se ponen en el punto b) de la actividad</span>
 
 ### Actividad
 
@@ -69,13 +73,14 @@ Puedes elegir cualquiera de estos dos caminos.
 
 - Usar **cable flexible de cobre, aislación PVC o XLPE, 0,6/1 kV**.
 - Tendido **en bandeja**. 
-- Para motores 5–10 kW elegir la sección **3×2,5 mm²** y verificar la caída de tensión. Si no verifica elegir **3×4 mm²** y verificar nuevamente. Esto uele ser suficiente.
+- Para motores 5–10 kW elegir la sección **3×2,5 mm²**. A la hora de verificar la caída de tensión, si no la verifica elegir **3×4 mm²** y verificar nuevamente.
 - $I_z$: para sección de **2,5 mm²** tomar $I_z=29A$ y para **4 mm²** tomar $Iz=38A$
 
 :::
 
-> Para aprobar esta etapa se presenta en papel esta parte de la memoria descriptiva, ordenada y prolijo. Se explica además oralmente lo escrito.
-
+::: warning
+Para aprobar esta etapa se presenta en papel esta parte de la memoria descriptiva, ordenada y prolija. Se explica además oralmente lo escrito.
+:::
 
 <!-- *** GUIDE END *** -->
 
