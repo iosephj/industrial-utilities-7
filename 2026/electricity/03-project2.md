@@ -18,7 +18,9 @@ Este esquema es igual para todos pero en cada tema las longitudes A y b son dist
 
 ### Temas
 
-Cada tema tiene datos distintos no solo para las longitudes sino para el motor que mueve la cinta.
+Cada tema tiene longitudes distintas y diferentes placas de motor. Los datos de la red eléctrica son los mismos para todos. En este [anexo](03-project2-anexo.html) se explica como interpretar las tensiones y las conexiones que aparecen en la placa.
+
+<span hidden> SUGERENCIA: Revisar la corriente que aparece en la placa, y que está oculta, no parece coincidir si uno hace el cálculo.</span>
 
 <details>
 <summary> Tema A</summary>
