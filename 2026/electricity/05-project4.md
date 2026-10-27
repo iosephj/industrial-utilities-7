@@ -6,6 +6,10 @@ version: "21/10/26"
 
 <!-- *** GUIDE START *** -->
 
+<details>
+
+<summary>**1.** Selección del dispositivo de protección</summary>
+
 ## 1. Selección del dispositivo de protección
 
 Con la $I_B$ e $I_Z$ obtenidas en la etapa anterior ahora toca seleccionar las protecciones específicas contra sobrecargas y cortocircuitos. 
@@ -29,6 +33,13 @@ Cuando se instala el guardamotor este se regula lo más exactamente posible a la
 
 :::
 
+</details>
+
+
+<details>
+
+<summary>**2.** Verificación contra sobrecargas</summary>
+
 ## 2. Verificación contra sobrecargas
 
 Consiste en comprobar analíticamente que el guardamotor seleccionado desconectará el circuito ante un exceso de corriente sostenido antes de que el calentamiento dañe la aislación de los conductores, las conexiones o el entorno.
@@ -39,7 +50,7 @@ Consiste en comprobar analíticamente que el guardamotor seleccionado desconecta
 <small>Coordinación de corrientes (Figura 771.19.A)</small>
 :::
 
-### A. Las Dos Condiciones Normativas de Coordinación
+### Las Dos Condiciones Normativas de Coordinación
 
 Según la subcláusula **771.19.2.1** y la **Figura 771.19.A**, la característica de funcionamiento de la protección contra sobrecargas debe satisfacer simultáneamente dos inecuaciones reglamentarias:
 
@@ -80,65 +91,89 @@ En este [anexo](05-project4-anexo.html) se explica esta inecuación más a fondo
 
 :::
 
+</details>
 
-## 3. Corrientes máxima y mínima de cortocircuito
 
-::: note
-Como aclaración, cuando la norma habla de **"Aguas Arriba"** se refiere a todo lo ubicado en dirección hacia la fuente de energía (el transformador de la red pública o la distribuidora). Y cuando habla de **"Aguas abajo"** se refiere a todo lo ubicado en dirección hacia las cargas (los tableros secundarios, cables y el motor de la cinta transportadora).
-:::
+<details>
 
-### A. Corriente de cortocircuito máxima ($I"_{k \text{ max}}$)
+<summary>**3.** Verificación contra cortocircuitos</summary>
+
+## 3. Verificación contra cortocircuitos
+
+La norma, en la subcláusula 771.19.2.2, exige hacer dos comprobaciones:
+
+- **($I_{cu} \ge I"_{k\text{ máx}}$)** Que el poder de corte del guardamotor ($I_{cu}$) sea mayor a la corriente máxima de cortocircuito $I"_{k\text{ máx}}$. Además 771.19.2.2.2 dice que esta corriente de cortocircuito es la correspondiente al punto donde está instalado el guardamotor, es decir en el tablero donde está el dispositivo y no en el tablero principal.
+- **($I_{\text{mag}} < I_{k\text{ mín}}$)** Que la corriente de disparo magnética del guardamotor ($I_{\text{mag}}$) sea menor a la corriente de cortocircuito mínimo $I_{k\text{ mín}}$ que es la que ocurre al final del cable.
+
+### A. Determinación de la corriente de cortocircuito máxima ($I"_{k \text{ max}}$)
 
 #### En el tablero principal
 
-Es la corriente que aparece cuando el cortocircuito sucede en los bornes de salida de este tablero. Este lazo involucra los conductores que hay desde el tablero principal hasta el transformador incluyendo su bobinado secundario. Aquí la corriente alcanza su máximo valor destructivo por que los cables son gruesos y ofrecen poca resistencia.  
+Es la corriente que aparece cuando el cortocircuito sucede en los bornes de salida de este tablero. El lazo involucra los conductores que hay desde el tablero principal hasta el transformador incluyendo su bobinado secundario. Aquí la corriente alcanza su máximo valor destructivo por que los cables son gruesos y ofrecen poca resistencia.  
 
-Se considera que es la corriente máxima de falla que la red eléctrica externa (la distribuidora) puede inyectar en la entrada del edificio.
+Aunque no se pide en esta ubicación es conveniente determinarla para entender que la impedancia (resistencia) del lazo $Z_{\text{trafo/red}}$ puede considerarse despreciable frente a la de los conductores más chicos que parten de este tablero a los distintos consumos.
 
 La norma pide que se pregunte el valor de esta corriente a la empresa distribuidora. Pero cuando se trata de proyectos educativos o la empresa no mandó el documento con este valor se pueden usar valores orientativos. 
 
 **Valores orientativos:**
 
-* *1)* Si la instalación está conectada a la red pública urbana estándar, donde el tablero principal puede estar quizás a decenas o cientos de metros del transformador de la calle, y tomando valores típicos de la red urbana, es razonable tomar entre **3000 A (3 kA)** a **5000 A (5 kA)**.
-* *2)* Si la industria cuenta con un transformador propio o se está al lado del transformador de la calle, este valor puede superar fácilmente los **10.000 A (10 kA)** debido a la baja resistencia de la red cercana. En el caso de un transformador propio se pueden usar los valores de la tabla 771-H.II.
+* *1)* Si la instalación está conectada a la red pública urbana estándar, donde el tablero principal puede estar quizás a decenas o cientos de metros del transformador de la calle, es razonable tomar entre **3000 A (3 kA)** a **5000 A (5 kA)**.
+* *2)* Si la industria cuenta con un transformador propio o se está pegado al transformador de la calle, este valor puede superar fácilmente los **10.000 A (10 kA)** debido a la baja resistencia de la red cercana. En el caso de un transformador propio se pueden usar los valores de la tabla 771-H.II.
 
-#### En un tablero secundario
+**Cálculo de $Z_{\text{trafo/red}}$:**
 
-Este es nuestro caso por que el motor tiene su propio tablero donde está el guardamotor. Además este tablero está a una cierta distancia del tablero principal. El guardamotor no está sometido al cortocircuito bruto de la entrada sino que está sometido a un valor atenuado por la distancia que lo separa del tablero principal.
+::: example
 
-La norma apoya este razonamiento en la cláusula 771.19.2.2.2 que indica que la capacidad de ruptura del dispositivo de protección, será por lo menos igual a la máxima intensidad de corriente de cortocircuito presunta $I"_{k \text{ max}}$ en el punto donde el dispositivo está instalado.
+Supongamos que se adopta 3000 A para la corriente de cortocircuito máxima $I"_{k \text{ max}}$
+
+Por ley de ohm para sistemas trifásicos se tiene:
+
+$I"_{k\text{ max}} = \frac{c \cdot U_L}{\sqrt{3} \cdot Z_{\text{trafo/red}}}$
+
+donde:
+
+- $U_L$ es la tensión de línea
+- c es un factor que considera la caída de tensión al momento de la falla y es de 0,95 a 1.
+
+Despejando y adoptando c = 1 obtenemos:
+
+$Z_{\text{trafo/red}} = \frac{c \cdot U_L}{\sqrt{3} \cdot I"_{k\text{ max}}} = \frac{219\text{ V}}{3.000\text{ A}} \approx \mathbf{0,073\text{ }\Omega}$
+
+Este valor es el módulo escalar de la impedancia que se le asigna a la red de entrada. En el bobinado secundario de transformador la impedancia es más inductiva y en los cables que llevan la energía es más resistiva.
+
+:::
+
+
+#### En el tablero donde está el guardamotor
+
+El guardamotor no está sometido al cortocircuito bruto de la entrada sino que está sometido a un valor atenuado por la distancia que lo separa del tablero principal.
 
 **Cálculo analítico:**
 
-- Fórmula exacta: $I"_{k\text{ max}} = \frac{c \cdot U_{fase}}{Z_{\text{lazo total}}} = \frac{c \cdot U_{fase}}{Z_{\text{fuente/red}} + Z_{cable}}$ donde c es un factor que considera la caída de tensión al momento de la falla y es de 0,95 a 1. Las "Z" son las impedancias.
-- Fórmula simplificada considerando c=1 y que los cables entre el transformador de la calle y el tablero principal son gruesos y su resistencia es muy baja: $I"_{k\text{ max}} = \frac{U_{fase}}{Z_{\text{cable}}}$ <span hidden> HACER la cuenta en clase para explicar por que Zfuente/red es despreciable, sería 220V/(3000 o 5000A), el cortocircuito bruto)</span>
-- Resistencia del cable: $Z_{\text{cable}} = \frac{\rho \cdot (2 \cdot L)}{S}$ donde:
+- Fórmula exacta: $I"_{k\text{ max}} = \frac{c \cdot U_L}{\sqrt{3} \cdot Z_{\text{lazo total}}} = \frac{c \cdot U_L}{\sqrt{3} \cdot (Z_{\text{trafo/red}} + Z_{cable})}$
+- Fórmula simplificada considerando c=1 y que la impedancia $Z_{\text{trafo/red}}$ de ~0.073 ohms es despreciable: $I"_{k\text{ max}} = \frac{U_L}{\sqrt{3} \cdot Z_{cable}}$
+- Impedancia del cable: Aquí es practicamente solo resistiva por lo que $Z_{\text{cable}} = R_{\text{cable}}= \frac{\rho \cdot (2 \cdot L)}{S}$ donde:
    + $\rho$ es la resistividad del cobre en **frío**, aprox. 0.018 $\frac{\Omega \cdot mm^2}{m}$
    + L: longitud del cable multiplicada por 2 (ida y vuelta)
    + S: sección del cable en mm2
 
 
 
-### B. Corriente de cortocircuito mínima ($I_{k\text{ min}}$)
+### B. Determinación de la corriente de cortocircuito mínima ($I_{k\text{ min}}$)
 
 Es la corriente que aparece cuando el cortcircuito sucede en el punto más alejado de la línea (en los bornes del motor más lejano). Toda la resistencia del cobre del cable reduce la corriente a su valor más bajo.
 
-Sirve para verificar el **Umbral de Disparo Magnético ($I_{\text{mag}}$) de la protección.
-
-La norma facilita tablas para su determinación pero también puede usarse un cálculo analítico.
-
-**Nuestro caso:** Las tablas de la norma arranca de cables de sección mayor a 2.5 mm2. Por esto la calculamos por cálculo analítico.
+La norma facilita tablas pero son para cables de sección mayor a 2.5 mm2 por lo que usaremos un cálculo analítico.
 
 **Cálculo analítico:** Es similar al anterior pero tomando el valor de la resistividad del cobre en caliente (80 - 90 °C). Es un poco mayor que la otra y permite calcular una corriente lo más baja posible, una condición más exigente a cumplir. En este caso: 
 
-- Fórmula exacta: $I_{k\text{ min}} = \frac{c \cdot U_{fase}}{Z_{\text{lazo total}}} = \frac{c \cdot U_{fase}}{Z_{\text{fuente/red}} + Z_{cable}}$ donde el $Z{cable}$ abarca los dos tramos, desde el tablero principal al tablero del motor y de éste a la falla al final de la línea.
-- Fórmula simplificada: $I_{k\text{ min}} = \frac{U_{fase}}{Z_{\text{cable}}}$
-- Resistencia del cable: $Z_{\text{cable}} = \frac{\rho \cdot (2 \cdot L)}{S}$ donde:
+- Fórmula exacta: $I_{k\text{ min}} = \frac{c \cdot U_L}{\sqrt{3} \cdot Z_{\text{lazo total}}} = \frac{c \cdot U_L}{\sqrt{3} \cdot ( Z_{\text{trafo/red}} + Z_{cable})}$ donde el $Z{cable}$ abarca los dos tramos, desde el tablero principal al tablero del motor y de éste a la falla al final de la línea.
+- Fórmula simplificada: $I_{k\text{ min}} = \frac{U_L}{\sqrt{3} \cdot Z_{\text{cable}}}$
+- Impedancia del cable: Es básicamente resistiva por lo que $Z_{\text{cable}} = R_{\text{cable}} = \frac{\rho \cdot (2 \cdot L)}{S}$ donde:
    + $\rho$ es la resistividad del cobre en caliente (80-90°C), aprox. 0.0225 $\frac{\Omega \cdot mm^2}{m}$
    + L: longitud del cable multiplicada por 2 (ida y vuelta)
    + S: sección del cable en mm2
 
-**Verificación:** La corriente que activa el "gatillo" de la protección ($I_{mag}$) debe ser estar por debajo de esta corriente mínima, es decir: $I_{\text{mag}} < I_{k\text{ mín}}$. Esto asegura que, aunque la falla sea más "débil" por la distancia, el aparato la reconozca como un cortocircuito y desconecte el circuito en menos de **0,1 segundos** antes de que el cable se queme.
 
 ### Actividad
 
@@ -152,8 +187,10 @@ La norma facilita tablas para su determinación pero también puede usarse un c�
 
 :::
 
+</details>
+
 ::: warning
-Para aprobar esta etapa se presenta en papel esta parte de la memoria descriptiva, ordenada y prolijo. Se explica además oralmente lo escrito.
+Para aprobar esta etapa se presenta en papel esta parte de la memoria descriptiva, ordenada y prolija. Se explica además oralmente lo escrito.
 :::
 
 <!-- *** GUIDE END *** -->
