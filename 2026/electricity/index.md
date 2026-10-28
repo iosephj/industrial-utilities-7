@@ -16,7 +16,8 @@ version: "16/09/26"
 - [Etapa 1: Introducción](02-project1.html) <span class = "grey3 size80"> (1 pts)</span>
 - [Etapa 2: Definición de la cinta y del arranque](03-project2.html) <span class = "grey3 size80"> (1 pts)</span>
 - [Etapa 3: Corriente de proyecto y dimansionamiento del conductor](04-project3.html) <span class = "grey3 size80"> (1 pts)</span>
-- [Etapa 4: Seleccionar y coordinar las protecciones](05-project4.html) <span class = "grey3 size80"> (1 pts)</span>
+- [Etapa 4: Seleccionar y coordinar las protecciones del motor](05-project4.html) <span class = "grey3 size80"> (1 pts)</span>
+- [Etapa 5: Verficiar la caída de tensión](06-project5.html) <span class = "grey3 size80"> (1 pts)</span>
 
 
 

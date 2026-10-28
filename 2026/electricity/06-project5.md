@@ -1,78 +1,76 @@
 ---
-title: "Proyecto - Etapa 3: Corriente de proyecto y selección del conductor"
+title: "Proyecto - Etapa 5: Verificación por caída de tensión"
 autor: "José Juarez"
-version: "06/10/26"
+version: "27/10/26"
 ---
 
 <!-- *** GUIDE START *** -->
 
 
-## 1. Cálculo de la corriente de proyecto
+Es la última etapa del procedimiento de dimensionamiento de cables de la norma **AEA 90364-7-771**. Su objetivo es verificar que, ante la circulación de la corriente del circuito, la tensión en los bornes del equipo no caiga por debajo de los límites admisibles.
 
-La corriente de proyecto $I_B$ es el valor de corriente que se utiliza para dimensionar las secciones de los cables y seleccionar los calibres de las protecciones del circuito.
+## 1. Límites Admisibles por Norma (Subcláusula 771.13.b)
 
-Para el caso específico de un **motor eléctrico trifásico**, la reglamentación **AEA 90364-7-771** establece una metodología precisa de cálculo que se divide en dos pasos como se pide en la actividad de abajo.
+Para circuitos específicos de **motores**, la norma exige medir la caída de tensión desde el Tablero Principal hasta la caja de bornes del motor y verificar dos condiciones:
 
-### Actividad
+1. **En Régimen Permanente (Funcionamiento normal):** La caída de tensión no debe superar el **5%**.
+   * En $380\text{ V}$ trifásico: $\Delta U_{\text{máx}} = 380\text{ V} \cdot 0,05 = \mathbf{19\text{ V}}$.
+2. **Durante el Arranque del Motor:** La caída de tensión no debe superar el **15%**.
+   * En $380\text{ V}$ trifásico: $\Delta U_{\text{máx, arr}} = 380\text{ V} \cdot 0,15 = \mathbf{57\text{ V}}$.
 
-::: activity
 
-**a)** Cálcular la Corriente Nominal del Motor $I_n$
+## 2. Procedimiento de Cálculo
 
-Antes de aplicar los factores de proyecto, se debe determinar la **corriente nominal de línea** que consumirá el motor a plena carga utilizando los datos de su placa de características (los datos que cada uno tiene):
+En corriente alterna, el cálculo exacto de la caída de tensión requiere conocer la resistencia y la reactancia inductiva de cada cable, además del ángulo de desfase.
 
-* Potencia mecánica en el eje $P_{mec}$
-* Tensión nominal de línea $U$
-* Factor de potencia $\cos\phi$
-* Rendimiento o eficiencia $\eta$
+Para simplificar este cálculo, la norma (subcláusula 771.19.7 c) establece valores tabulados llamados GDC (Gradiente de Caída de Tensión), que reúnen estas características eléctricas en un único valor y permiten calcular la caída de tensión según la corriente, la longitud y la sección del cable.
 
-**Sugerencia:** Convertir potencia mecánica a potencia eléctrica consumida (Potencia activa) usando $\eta$. Luego calcular la corriente nominal.
+### A. Cálculo de la Caída de Tensión en Régimen Permanente
 
-<div hidden>
-  Para un sistema trifásico equilibrado, la corriente nominal de línea se calcula mediante la fórmula:
-  $I_n = \frac{P_{el}}{\sqrt{3} \cdot U \cdot \cos\phi}$
-</div>
+Se utiliza la fórmula del Gradiente de Caída para cargas generales (con $\cos\phi = 0,8$):
 
-**b)** Determinar la Corriente de Proyecto $I_B$ según AEA 90364
+$\Delta U_{\text{régimen}} = \frac{\text{GDC} \cdot I \cdot L}{S} \quad [\text{en Volts}]$
 
-Esta corriente se calcula para dimensionar los conductores. El Anexo 771-H empieza con una tabla resumen que muestra el proceso para determinar la sección de los conductors. Pero en el primer paso, cuando hay que determinar $I_B$, no lo aborda para el caso de motores. Para resolver este caso hay que ir a la sección 771.16 que trata sobre el dimensionaniento de la sección de los condutores. En concreto al final de la 771.16.
+* **$\text{GDC}$ (Gradiente de Caída):** Buscar su valor en la norma. <span hidden>Para sistemas trifásicos en cobre, $\text{GDC} = \mathbf{0,035}\text{ }\frac{\text{V}\cdot\text{mm}^2}{\text{A}\cdot\text{m}}$.</span>
+* **$I$:** Corriente nominal del motor (en Amperes).
+* **$L$:** Longitud de la línea en metros (distancia entre tableros/bornes).
+* **$S$:** Sección propuesta del cable (en $\text{mm}^2$).
 
-**Aclaración:** La corriente de proyecto no es una corriente física instantánea, sino un **valor de diseño estipulado por norma** para para garantizar un **margen térmico de seguridad** en el cable. Así se evita que los arranques repetitivos o las ligeras sobrecargas mecánicas de la cinta transportadora envejezcan prematuramente la aislación del conductor.
-
-<div hidden>
-Según la subcláusula **771.16.2.5**, cuando se dimensionan los conductores o cables de alimentación para **un solo motor**, la intensidad de corriente de proyecto no debe ser inferior al **125 % (factor 1,25)** de la intensidad nominal del motor.
-
-¿Por qué exige la norma aplicar el factor del 125 % (1,25)?
-
-1. **Margen térmico por sobrecarga de servicio:** Los motores pueden operar en condiciones de carga variable o sufrir ligeras sobrecargas mecánicas continuas durante su funcionamiento.
-2. **Ciclos de arranque:** Evita el envejecimiento prematuro del aislamiento del cable debido al calentamiento acumulado producido por las elevadas corrientes durante los arranques repetitivos de la cinta transportadora.
-3. **Flexibilidad normativa:** La norma aclara que el coeficiente 1,25 podrá reducirse si se conoce con precisión el **factor de servicio real** del motor, pero aclara explícitamente que nunca será inferior a 1.
-</div>
-
+::: note
+**Nota:** Para variaciones pequeñas del $\cos\phi$, por ejemplo entre 0,85 y 0,75 se puede seguir usando este método sin inrtoducir un error significativo. Para valores muy distintos o cálculo exacto se usa la Fórmula General.
 :::
 
-## 2. Elegir el conductor
 
-A partir de $I_B$ teniendo en cuenta las condiciones de la instalación se elije la sección del conductor y su correspondiene corriente máxima admisible $I_z$.
+### B. Cálculo de la Caída de Tensión durante el Arranque
 
-Para esto el segundo paso de la tabla resumen del Anexo 771-H manda consultar la cláusula 771.19.3. El proceso consiste en aplicar factores de corrección por método de instalación, temperatura ambiente, agrupamiento de cables, tipo de aislamiento, etc. Y luego elegir la sección cuyo "$I_z$ (intensidad admisible) ≥ $I_B$ (corriente de proyecto)". Abajo verás como puedes completar esta actividad.
+Durante el arranque el motor puede demandar una corriente significativamente mayor a la nominal y, por el contrario, el factor de potencia puede caer bastante. Pero todo va a depender del tipo de arranque seleccinado.
 
-<span hidden> SUGERENCIA: En 2027 hacer una explicación de este proceso para que cada uno llegue a un valor teniendo en cuenta el uso de la cinta. De este modo ellos hacen el proceso y no asumen directamente los valores que se ponen en el punto b) de la actividad</span>
+#### *B. 1)* Caso especial del arranque con variador de frecuencia
 
-### Actividad
+En este caso la corriente durante el arranque queda acotada a la intensidad nominal ($I_{\text{arr}} \approx I_n$) con factor de potencia de régimen ($\cos\phi \approx 0,85$). Por lo tanto, la caída de tensión en el arranque resulta idéntica a la de régimen permanente cumpliendo holgadamente el límite normativo del 15 % exigido en el arranque.
+
+#### *B. 2)* Caso en que sea otro tipo de arranque
+
+Se puede usar la fórmula del gradiente pero seleccionando bien los valores de cada cosa:
+
+$\Delta U_{\text{arranque}} = \frac{\text{GDC}_{\text{arr}} \cdot I_{\text{arr}} \cdot L}{S} \quad [\text{en Volts}]$
+
+* **$\text{GDC}_{\text{arr}}$:** La norma da un valor para arranque directo considerando un $\cos\phi$ de 0,3. Es razonable usar este mismo valor para el caso del arranque estrella triángulo. En el caso de un arranque con soft starter daría un rsultado menos realista y muy conservativo pero se puede usar. Como alternativa en cualquier caso se puede usar el método con la fórmula exacta.
+* **$I_{\text{arr}}$:** Corriente de arranque del motor de acuerdo al método de arranque seleccionado. Se pueden encontrar valores orientativos en la tabla de abajo.
+
+
+| Método de Arranque | $I_{\text{arr}}$ | Caída de Tensión | 
+| :--- | :--- | :--- | 
+| Directo (DOL) | $5 \ldots 7 \cdot I_n$ *(típicamente $6 \cdot I_n$)* | **Máxima** (pico elevado instantáneo) |
+| Estrella - Triángulo | $2 \ldots 2,5 \cdot I_n$ *(1/3 del directo)* | **Moderada** | 
+| Soft-Starter | $2 \ldots 3,5 \cdot I_n$ *(configurable)* | **Baja y controlada** | 
+
+
+## 3. Actividad
 
 ::: activity
 
-Puedes elegir cualquiera de estos dos caminos.
-
-**a)** Hacer todo el proceso de selección siguiendo paso a paso la norma llegando a la sección del cable y al $I_z$.
-
-**b)** Si la aplicación de tu cinta transportadora no lo impide puedes usar directamente estos valores que se muestran abajo y que están basados en la experiencia industrial:
-
-- Usar **cable flexible de cobre, aislación PVC o XLPE, 0,6/1 kV**.
-- Tendido **en bandeja**. 
-- Para motores 5–10 kW elegir la sección **3×2,5 mm²**. A la hora de verificar la caída de tensión, si no la verifica elegir **3×4 mm²** y verificar nuevamente.
-- $I_z$: para sección de **2,5 mm²** tomar $I_z=29A$ y para **4 mm²** tomar $Iz=38A$
+Verificar con el método GDC la caída de tensión en régimen permanente y en el arranque justificando los valores que usa.
 
 :::
 
