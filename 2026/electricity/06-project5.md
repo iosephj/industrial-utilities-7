@@ -72,6 +72,7 @@ $\Delta U_{\text{arranque}} = \frac{\text{GDC}_{\text{arr}} \cdot I_{\text{arr}}
 
 Verificar con el método GDC la caída de tensión en régimen permanente y en el arranque justificando los valores que usa.
 
+En caso de que no verifique seleccionar una sección mayor de cable y verificar de nuevo.
 :::
 
 ::: warning
