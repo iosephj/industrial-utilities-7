@@ -18,6 +18,7 @@ version: "16/09/26"
 - [Etapa 3: Corriente de proyecto y dimansionamiento del conductor](04-project3.html) <span class = "grey3 size80"> (1 pts)</span>
 - [Etapa 4: Seleccionar y coordinar las protecciones del motor](05-project4.html) <span class = "grey3 size80"> (1 pts)</span>
 - [Etapa 5: Verficiar la caída de tensión](06-project5.html) <span class = "grey3 size80"> (1 pts)</span>
+- [Etapa 6: Esquemas de conexión a tierra y esquema unifilar](07-project6.html) <span class = "grey3 size80"> (2 pts)</span>
 
 
 
