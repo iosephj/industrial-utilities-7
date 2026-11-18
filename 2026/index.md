@@ -16,7 +16,7 @@ version: "20/05/26"
 - [Instalaciones de agua](water/index.html)
 - [Instalaciones de gas](gas/index.html)
 - [Instalaciones eléctricas](electricity/index.html)
-
+- [Mantenimiento industrial básico](maintenance/mantenimiento.html)
 
 <span hidden>Fin archivo</span>
 
